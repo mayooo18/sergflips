@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#574500",
+              "surface-container-lowest": "#0e0e0e",
+              "tertiary-fixed": "#ffe087",
+              "on-secondary": "#3c2f00",
+              "on-primary-container": "#385283",
+              "inverse-on-surface": "#313030",
+              "on-secondary-fixed": "#231a00",
+              "error-container": "#93000a",
+              "on-surface": "#e5e2e1",
+              "on-tertiary-fixed": "#231a00",
+              "outline-variant": "#44474f",
+              "on-primary": "#112f5e",
+              "primary-container": "#adc7ff",
+              "tertiary-fixed-dim": "#e9c349",
+              "surface-container-high": "#2a2a2a",
+              "surface-tint": "#adc7ff",
+              "background": "#131313",
+              "on-tertiary-container": "#655000",
+              "surface-variant": "#353534",
+              "secondary": "#e9c349",
+              "error": "#ffb4ab",
+              "on-primary-fixed-variant": "#2b4676",
+              "on-surface-variant": "#c4c6d0",
+              "surface-container-low": "#1c1b1b",
+              "surface-container-highest": "#353534",
+              "on-secondary-container": "#342800",
+              "outline": "#8e909a",
+              "on-tertiary-fixed-variant": "#574500",
+              "surface-bright": "#393939",
+              "primary-fixed": "#d7e2ff",
+              "secondary-container": "#ae8d10",
+              "secondary-fixed-dim": "#e9c349",
+              "primary": "#d8e3ff",
+              "on-background": "#e5e2e1",
+              "primary-fixed-dim": "#adc7ff",
+              "on-error": "#690005",
+              "on-tertiary": "#3c2f00",
+              "on-primary-fixed": "#001a40",
+              "tertiary": "#ffe088",
+              "tertiary-container": "#e9c349",
+              "surface-dim": "#131313",
+              "surface": "#131313",
+              "on-error-container": "#ffdad6",
+              "surface-container": "#201f1f",
+              "inverse-surface": "#e5e2e1",
+              "inverse-primary": "#445e8f",
+              "secondary-fixed": "#ffe087"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="z-50 sticky top-4 max-w-7xl mx-auto rounded-2xl mt-4 bg-neutral-900/70 dark:bg-[#131313]/70 backdrop-blur-xl flex justify-between items-center w-full px-8 py-4 shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+<div class="text-2xl font-black tracking-tighter text-[#e5e2e1] uppercase font-headline">Sergflips</div>
+<div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+<a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 transition-transform duration-300" href="#">Home</a>
+<a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 transition-transform duration-300" href="#">Fleet</a>
+<a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 transition-transform duration-300" href="#">Booking</a>
+<a class="text-[#adc7ff] border-b-2 border-[#adc7ff] pb-1 hover:scale-105 transition-transform duration-300" href="#">About</a>
+<a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 transition-transform duration-300" href="#">Contact</a>
+</div>
+<button class="bg-gradient-to-br from-primary-container to-primary text-on-primary-container px-6 py-2 rounded-xl font-headline font-bold hover:scale-105 active:scale-95 transition-all duration-300">
+            Book Now
+        </button>
+</nav>
+<main class="relative overflow-hidden">
+<!-- Hero Section / Company Story -->
+<section class="relative pt-20 pb-32 px-8 max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7">
+<span class="text-secondary font-headline font-bold tracking-widest uppercase text-sm mb-4 block">Our Heritage</span>
+<h1 class="text-6xl md:text-8xl font-headline font-bold text-on-surface tracking-tighter leading-none mb-8">
+                        The Kinetic <br/><span class="text-primary-container">Philosophy.</span>
+</h1>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-10">Founded in 2014, Sergflips was born from a singular obsession: the bridge between engineering excellence and the human experience. We don't just provide transportation; we curate high-performance artifacts for those who demand more from the road.</p>
+<div class="flex gap-4">
+<div class="bg-surface-container-high p-6 rounded-xl flex-1 border-l-2 border-secondary">
+<span class="block text-3xl font-headline font-bold text-secondary mb-1">10+</span>
+<span class="text-xs uppercase tracking-widest opacity-60">Years Excellence</span>
+</div>
+<div class="bg-surface-container-high p-6 rounded-xl flex-1 border-l-2 border-primary">
+<span class="block text-3xl font-headline font-bold text-primary mb-1">500+</span>
+<span class="text-xs uppercase tracking-widest opacity-60">Vetted Machines</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="dramatic low angle shot of a classic silver sports car in a dark minimalist garage with blue neon rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC645rWa-zS3U3Y7Vv5qAJvoZK0n7hFMVBTVBo5Wp98tp4T2SCYAMTVNCiVqigd8mU6Xa6aXU-JgtMAScc4QhRInJ0a0fKkILhxw0_tPBecA9xi_3fp_6UVDl5bnG-lKn-91cD6rKsQ42C9JAZl45vuVX0tliadKmJU1ZpuxNjhp17KmpqdPXb98TnaDM6Zr76E6rMuHIQ2GHhlUVe9SkmokNBqWrBoNYrwDMTXOCBkEclnze9I1oZTRYoFNXdWwyZepVsTrLMplwpO"/>
+</div>
+<div class="absolute -bottom-10 -left-10 bg-surface-bright glass-panel p-8 rounded-2xl hidden md:block max-w-[280px] shadow-2xl">
+<p class="text-sm italic font-light leading-relaxed">"The road is the ultimate gallery, and every curve is a brushstroke. We simply provide the medium."</p>
+<span class="block mt-4 text-xs font-bold uppercase tracking-widest">— The Founder</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Badges Section -->
+<section class="bg-surface-container-low py-20 px-8">
+<div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-12">
+<div class="flex items-center gap-6 group">
+<div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center text-primary transition-all group-hover:bg-primary group-hover:text-on-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="verified_user">verified_user</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl">Licensed &amp; Insured</h3>
+<p class="text-sm text-on-surface-variant">Comprehensive tier-one coverage</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center text-primary transition-all group-hover:bg-primary group-hover:text-on-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="support_agent">support_agent</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl">24/7 Support</h3>
+<p class="text-sm text-on-surface-variant">Global concierge at your service</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-16 h-16 rounded-full bg-surface-container-highest flex items-center justify-center text-primary transition-all group-hover:bg-primary group-hover:text-on-primary">
+<span class="material-symbols-outlined text-3xl" data-icon="event_busy">event_busy</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl">Free Cancellation</h3>
+<p class="text-sm text-on-surface-variant">Flexibility for the modern explorer</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Policies & Insurance Bento Grid -->
+<section class="py-32 px-8 max-w-7xl mx-auto">
+<h2 class="text-4xl font-headline font-bold mb-16 text-center">Elite Protection <span class="text-secondary">&amp; Safety</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Large Policy Card -->
+<div class="md:col-span-2 bg-surface-container-high rounded-xl p-10 relative overflow-hidden group">
+<div class="relative z-10 h-full flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary text-5xl mb-6" data-icon="shield_with_heart" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+<h3 class="text-3xl font-headline font-bold mb-4">The Platinum Protection Plan</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">Our signature insurance policy covers everything from minor abrasions to comprehensive liability, ensuring your peace of mind while you push the limits of performance.</p>
+</div>
+<ul class="mt-8 space-y-3">
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span> Zero-Deductible options available</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span> Worldwide multi-driver coverage</li>
+<li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary text-sm" data-icon="check_circle">check_circle</span> Personal effect protection</li>
+</ul>
+</div>
+<div class="absolute -right-20 -bottom-20 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[300px]" data-icon="security">security</span>
+</div>
+</div>
+<!-- Small Policy Card 1 -->
+<div class="bg-surface-container-high rounded-xl p-10 flex flex-col justify-between border-t-4 border-secondary">
+<div>
+<h3 class="text-2xl font-headline font-bold mb-4">Concierge Logistics</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Direct-to-door delivery and collection service. We handle the technicalities so you can focus on the journey.</p>
+</div>
+<button class="mt-8 text-secondary font-headline font-bold flex items-center gap-2 hover:translate-x-2 transition-transform">
+                        Explore Logistics <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- Small Policy Card 2 -->
+<div class="bg-surface-container-high rounded-xl p-10 flex flex-col justify-between border-t-4 border-primary">
+<div>
+<h3 class="text-2xl font-headline font-bold mb-4">Mechanical Integrity</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">Each vehicle undergoes a rigorous 200-point inspection by certified technicians before every single booking.</p>
+</div>
+<div class="mt-8 flex gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="build">build</span>
+<span class="material-symbols-outlined text-primary" data-icon="speed">speed</span>
+<span class="material-symbols-outlined text-primary" data-icon="precision_manufacturing">precision_manufacturing</span>
+</div>
+</div>
+<!-- Long Policy Detail -->
+<div class="md:col-span-2 bg-gradient-to-r from-surface-container-high to-surface-container-low rounded-xl p-10 flex items-center">
+<div class="flex-1">
+<h3 class="text-2xl font-headline font-bold mb-2">Transparency First</h3>
+<p class="text-sm text-on-surface-variant">Our contracts are written in plain English. No hidden fees, no mileage surprises, just pure high-octane excellence.</p>
+</div>
+<div class="w-px h-16 bg-outline-variant mx-8 opacity-20"></div>
+<div class="text-right">
+<span class="block text-xs uppercase tracking-tighter opacity-50 mb-1">Standard</span>
+<span class="font-headline font-bold text-xl">Unlimited Miles</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#1c1b1b] dark:bg-[#1c1b1b] w-full pt-16 pb-8 border-t border-outline-variant/10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 px-8">
+<div class="md:col-span-1">
+<div class="text-xl font-bold text-[#e5e2e1] font-headline uppercase tracking-tighter mb-6">[COMPANY NAME]</div>
+<p class="text-sm text-[#e5e2e1]/60 leading-relaxed">Defining the next era of high-performance mobility and automotive luxury.</p>
+</div>
+<div>
+<h5 class="text-[#adc7ff] font-headline font-bold mb-6 text-xs uppercase tracking-widest">Experience</h5>
+<ul class="space-y-4 text-sm text-[#e5e2e1]">
+<li><a class="hover:text-[#adc7ff] transition-colors" href="#">The Fleet</a></li>
+<li><a class="hover:text-[#adc7ff] transition-colors" href="#">VIP Concierge</a></li>
+<li><a class="hover:text-[#adc7ff] transition-colors" href="#">Track Events</a></li>
+<li><a class="hover:text-[#adc7ff] transition-colors" href="#">Gift Vouchers</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-[#adc7ff] font-headline font-bold mb-6 text-xs uppercase tracking-widest">Support</h5>
+<ul class="space-y-4 text-sm text-[#e5e2e1]">
+<li><a class="hover:text-[#adc7ff] transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-[#adc7ff] transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-[#adc7ff] transition-colors" href="#">FAQ</a></li>
+<li><a class="hover:text-[#adc7ff] transition-colors" href="#">Fleet Guide</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-[#adc7ff] font-headline font-bold mb-6 text-xs uppercase tracking-widest">Newsletter</h5>
+<p class="text-xs text-[#e5e2e1]/60 mb-4">Subscribe for early access to new fleet arrivals.</p>
+<div class="flex">
+<input class="bg-surface-container-high border-none rounded-l-lg px-4 py-2 text-sm w-full focus:ring-1 focus:ring-primary-container" placeholder="Email Address" type="email"/>
+<button class="bg-primary-container text-on-primary-container rounded-r-lg px-4 py-2 hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/10 text-center">
+<p class="font-['Inter'] text-sm text-[#e5e2e1]">© 2024 Sergflips. High-Performance Excellence.</p>
+</div>
+</footer>
+</body></html>

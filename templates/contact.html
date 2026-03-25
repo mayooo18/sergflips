@@ -3,291 +3,256 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Contact | SERG FLIPS</title>
+<title>Contact | Sergflips</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "on-primary-fixed-variant": "#004493",
-              "surface-container-lowest": "#0e0e0e",
-              "on-secondary-fixed": "#241a00",
-              "on-background": "#e5e2e1",
-              "on-tertiary-container": "#4f3e00",
-              "primary-fixed-dim": "#adc7ff",
-              "inverse-surface": "#e5e2e1",
-              "on-primary": "#002e68",
-              "secondary-fixed-dim": "#e9c349",
-              "surface-container-low": "#1c1b1b",
-              "inverse-on-surface": "#313030",
-              "on-secondary-fixed-variant": "#574500",
-              "primary-fixed": "#d8e2ff",
-              "secondary-container": "#af8d11",
-              "tertiary": "#eac34a",
-              "surface-container-highest": "#353534",
-              "outline": "#8b90a0",
-              "secondary-fixed": "#ffe088",
-              "on-tertiary": "#3c2f00",
-              "on-error-container": "#ffdad6",
-              "on-error": "#690005",
-              "on-surface": "#e5e2e1",
-              "surface": "#131313",
-              "primary-container": "#4a8eff",
-              "surface-tint": "#adc7ff",
-              "surface-container-high": "#2a2a2a",
-              "tertiary-fixed-dim": "#e9c349",
-              "surface-container": "#201f1f",
-              "inverse-primary": "#005bc0",
-              "tertiary-fixed": "#ffe088",
-              "surface-bright": "#393939",
-              "secondary": "#e9c349",
-              "on-primary-container": "#00285b",
-              "on-secondary-container": "#342800",
-              "primary": "#adc7ff",
-              "on-primary-fixed": "#001a41",
-              "on-tertiary-fixed": "#241a00",
-              "outline-variant": "#414754",
-              "on-tertiary-fixed-variant": "#574500",
-              "on-secondary": "#3c2f00",
-              "on-surface-variant": "#c1c6d7",
-              "tertiary-container": "#cca830",
-              "background": "#131313",
-              "error": "#ffb4ab",
-              "error-container": "#93000a",
-              "surface-dim": "#131313",
-              "surface-variant": "#353534"
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-fixed-variant": "#574500",
+                        "surface-container-lowest": "#0e0e0e",
+                        "tertiary-fixed": "#ffe087",
+                        "on-secondary": "#3c2f00",
+                        "on-primary-container": "#385283",
+                        "inverse-on-surface": "#313030",
+                        "on-secondary-fixed": "#231a00",
+                        "error-container": "#93000a",
+                        "on-surface": "#e5e2e1",
+                        "on-tertiary-fixed": "#231a00",
+                        "outline-variant": "#44474f",
+                        "on-primary": "#112f5e",
+                        "primary-container": "#adc7ff",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-tint": "#adc7ff",
+                        "background": "#131313",
+                        "on-tertiary-container": "#655000",
+                        "surface-variant": "#353534",
+                        "secondary": "#e9c349",
+                        "error": "#ffb4ab",
+                        "on-primary-fixed-variant": "#2b4676",
+                        "on-surface-variant": "#c4c6d0",
+                        "surface-container-low": "#1c1b1b",
+                        "surface-container-highest": "#353534",
+                        "on-secondary-container": "#342800",
+                        "outline": "#8e909a",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "surface-bright": "#393939",
+                        "primary-fixed": "#d7e2ff",
+                        "secondary-container": "#ae8d10",
+                        "secondary-fixed-dim": "#e9c349",
+                        "primary": "#d8e3ff",
+                        "on-background": "#e5e2e1",
+                        "primary-fixed-dim": "#adc7ff",
+                        "on-error": "#690005",
+                        "on-tertiary": "#3c2f00",
+                        "on-primary-fixed": "#001a40",
+                        "tertiary": "#ffe088",
+                        "tertiary-container": "#e9c349",
+                        "surface-dim": "#131313",
+                        "surface": "#131313",
+                        "on-error-container": "#ffdad6",
+                        "surface-container": "#201f1f",
+                        "inverse-surface": "#e5e2e1",
+                        "inverse-primary": "#445e8f",
+                        "secondary-fixed": "#ffe087"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
             },
-            fontFamily: {
-              "headline": ["Space Grotesk"],
-              "body": ["Inter"],
-              "label": ["Inter"]
-            },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
-          },
-        },
-      }
+        }
     </script>
 <style>
-      body {
-        background-color: #131313;
-        color: #e5e2e1;
-        font-family: 'Inter', sans-serif;
-      }
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      }
-      .editorial-text-shadow {
-        text-shadow: 0 10px 30px rgba(173,199,255,0.15);
-      }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-panel {
+            background: rgba(42, 42, 42, 0.6);
+            backdrop-filter: blur(20px);
+        }
     </style>
 </head>
-<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<body class="antialiased">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-[#131313]/80 backdrop-blur-md shadow-[0_10px_30px_-15px_rgba(173,199,255,0.1)]">
-<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
-<div class="flex items-center gap-3">
-
-<span class="text-2xl font-bold tracking-tighter text-[#e5e2e1] uppercase font-headline">SERG FLIPS</span>
+<nav class="max-w-7xl mx-auto rounded-2xl mt-4 sticky top-4 bg-neutral-900/70 dark:bg-[#131313]/70 backdrop-blur-xl z-50 shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex justify-between items-center w-full px-8 py-4">
+<div class="text-2xl font-black tracking-tighter text-[#e5e2e1] uppercase font-['Space_Grotesk']">Sergflips</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Space_Grotesk'] font-bold tracking-tight text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 transition-transform duration-300" href="#">Home</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tight text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 transition-transform duration-300" href="#">Fleet</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tight text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 transition-transform duration-300" href="#">Booking</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tight text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 transition-transform duration-300" href="#">About</a>
+<a class="font-['Space_Grotesk'] font-bold tracking-tight text-[#adc7ff] border-b-2 border-[#adc7ff] pb-1 hover:scale-105 transition-transform duration-300" href="#">Contact</a>
 </div>
-<div class="hidden md:flex items-center gap-10">
-<a class="text-[#c1c6d7] hover:text-[#e5e2e1] transition-colors font-body font-medium tracking-wide" href="index.html">Home</a>
-<a class="text-[#c1c6d7] hover:text-[#e5e2e1] transition-colors font-body font-medium tracking-wide" href="inventory.html">Inventory</a>
-<a class="text-[#c1c6d7] hover:text-[#e5e2e1] transition-colors font-body font-medium tracking-wide" href="financing.html">Financing</a>
-<a class="text-[#adc7ff] border-b-2 border-[#adc7ff] pb-1 font-body font-medium tracking-wide" href="contact.html">Contact</a>
-</div>
-<button class="hidden md:block bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-headline font-bold px-6 py-2 rounded-lg hover:opacity-80 transition-all active:scale-95">
-                Message Us
-            </button>
-<button id="menu-toggle" class="md:hidden text-on-surface focus:outline-none">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</div>
-<div id="mobile-menu" class="hidden md:hidden flex-col gap-6 px-8 py-6 border-t border-white/10 bg-[#131313]/95">
-<a class="text-[#c1c6d7] font-medium tracking-wide" href="index.html">Home</a>
-<a class="text-[#c1c6d7] font-medium tracking-wide" href="inventory.html">Inventory</a>
-<a class="text-[#c1c6d7] font-medium tracking-wide" href="financing.html">Financing</a>
-<a class="text-[#adc7ff] font-medium tracking-wide" href="contact.html">Contact</a>
-</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-xl font-bold font-['Space_Grotesk'] hover:scale-105 transition-transform duration-300 active:scale-95 transition-all">
+            Book Now
+        </button>
 </nav>
-<script>
-  document.getElementById('menu-toggle').addEventListener('click', function () {
-    var menu = document.getElementById('mobile-menu');
-    menu.classList.toggle('hidden');
-    menu.classList.toggle('flex');
-  });
-</script>
-<main class="pt-32 pb-24">
+<main class="max-w-7xl mx-auto px-8 py-20">
 <!-- Hero Section -->
-<header class="max-w-7xl mx-auto px-8 mb-20">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
-<div>
-<span class="text-secondary font-headline italic tracking-widest text-sm uppercase mb-4 block">Ready to Upgrade?</span>
-<h1 class="text-6xl md:text-8xl font-headline font-bold text-on-surface tracking-tighter leading-none editorial-text-shadow">
-                        Get in the <span class="text-primary italic">Driver’s</span> Seat Today
-                    </h1>
-</div>
-<div class="pb-4">
-<p class="text-on-surface-variant text-lg max-w-md font-body">
-                        Whether you're looking for your next curated vehicle selection or need expert advice on financing, our team is standing by to help you take the wheel.
-                    </p>
-</div>
-</div>
+<header class="mb-20 max-w-3xl">
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter text-on-surface mb-6 leading-[0.9]">
+                GET IN <span class="text-primary-container">TOUCH.</span>
+</h1>
+<p class="text-xl text-on-surface-variant font-body leading-relaxed max-w-2xl">
+                Experience unparalleled automotive excellence. Our concierge team is ready to facilitate your journey with the world's finest machinery.
+            </p>
 </header>
-<!-- Main Interaction Section -->
-<section class="max-w-7xl mx-auto px-8">
+<!-- Main Grid -->
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
 <!-- Contact Form Section -->
-<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-8 md:p-12 relative overflow-hidden">
-<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
-<h2 class="text-3xl font-headline font-bold mb-8 text-on-surface">Direct Inquiry</h2>
-<form class="space-y-6 relative z-10">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="lg:col-span-7 bg-surface-container-low p-8 md:p-12 rounded-xl border border-outline-variant/10">
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <div class="space-y-2">
-<label class="text-xs font-headline uppercase tracking-widest text-on-surface-variant ml-1">Full Name</label>
-<input class="w-full bg-surface-container-lowest border-none focus:ring-2 focus:ring-primary text-on-surface p-4 rounded-lg placeholder:text-outline-variant transition-all" placeholder="John Doe" type="text"/>
+<label class="block text-xs font-bold tracking-widest text-primary-container uppercase">Full Name</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container transition-all placeholder:text-outline/40" placeholder="John Wick" type="text"/>
 </div>
 <div class="space-y-2">
-<label class="text-xs font-headline uppercase tracking-widest text-on-surface-variant ml-1">Email Address</label>
-<input class="w-full bg-surface-container-lowest border-none focus:ring-2 focus:ring-primary text-on-surface p-4 rounded-lg placeholder:text-outline-variant transition-all" placeholder="john@example.com" type="email"/>
+<label class="block text-xs font-bold tracking-widest text-primary-container uppercase">Email Address</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container transition-all placeholder:text-outline/40" placeholder="john@continental.com" type="email"/>
 </div>
 </div>
 <div class="space-y-2">
-<label class="text-xs font-headline uppercase tracking-widest text-on-surface-variant ml-1">Phone Number</label>
-<input class="w-full bg-surface-container-lowest border-none focus:ring-2 focus:ring-primary text-on-surface p-4 rounded-lg placeholder:text-outline-variant transition-all" placeholder="+1 (555) 000-0000" type="tel"/>
+<label class="block text-xs font-bold tracking-widest text-primary-container uppercase">Phone Number</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container transition-all placeholder:text-outline/40" placeholder="+1 (555) 000-0000" type="tel"/>
 </div>
 <div class="space-y-2">
-<label class="text-xs font-headline uppercase tracking-widest text-on-surface-variant ml-1">Message</label>
-<textarea class="w-full bg-surface-container-lowest border-none focus:ring-2 focus:ring-primary text-on-surface p-4 rounded-lg placeholder:text-outline-variant transition-all resize-none" placeholder="Tell us about the vehicle you're interested in..." rows="5"></textarea>
+<label class="block text-xs font-bold tracking-widest text-primary-container uppercase">Your Message</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container transition-all placeholder:text-outline/40 resize-none" placeholder="Tell us about your requirements..." rows="5"></textarea>
 </div>
-<button class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-headline font-black py-5 rounded-lg text-lg tracking-tight hover:opacity-90 transition-all active:scale-[0.98] shadow-lg shadow-primary/10" type="submit">
-                            SEND MESSAGE
-                        </button>
+<button class="group flex items-center justify-center gap-3 w-full bg-primary-container text-on-primary-container font-headline font-bold text-lg py-5 rounded-xl hover:scale-[1.02] active:scale-95 transition-all" type="submit">
+                        SEND MESSAGE
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
 </form>
 </div>
-<!-- Business Info & Bento Aside -->
+<!-- Side Information Column -->
 <div class="lg:col-span-5 flex flex-col gap-8">
-<!-- Quick Info Card -->
-<div class="bg-surface-container-high p-8 rounded-xl border-l-4 border-secondary">
-<h3 class="text-xl font-headline font-bold text-on-surface mb-6">Business Details</h3>
-<div class="space-y-8">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">phone_iphone</span>
+<!-- Business Hours Card -->
+<div class="bg-surface-container-high p-8 rounded-xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/5 rounded-full -mr-16 -mt-16 transition-transform duration-700 group-hover:scale-150"></div>
+<h3 class="text-2xl font-headline font-bold mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">schedule</span>
+                        OPERATING HOURS
+                    </h3>
+<div class="space-y-4 font-body">
+<div class="flex justify-between items-center pb-3 border-b border-outline-variant/10">
+<span class="text-on-surface-variant">Monday — Friday</span>
+<span class="font-mono text-primary-container">08:00 AM — 10:00 PM</span>
+</div>
+<div class="flex justify-between items-center pb-3 border-b border-outline-variant/10">
+<span class="text-on-surface-variant">Saturday</span>
+<span class="font-mono text-primary-container">09:00 AM — 08:00 PM</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant">Sunday</span>
+<span class="font-mono text-secondary">Concierge Only</span>
+</div>
+</div>
+</div>
+<!-- Info Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary-container text-3xl mb-4">call</span>
+<h4 class="text-xs font-bold tracking-widest text-outline uppercase mb-1">Call Us</h4>
+<p class="font-headline font-bold text-lg">+1 (800) VELOCITY</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary-container text-3xl mb-4">mail</span>
+<h4 class="text-xs font-bold tracking-widest text-outline uppercase mb-1">Email</h4>
+<p class="font-headline font-bold text-lg">drive@company.com</p>
+</div>
+</div>
+<!-- Location Map Placeholder -->
+<div class="flex-grow min-h-[300px] bg-surface-container-low rounded-xl overflow-hidden relative border border-outline-variant/10">
+<div class="absolute inset-0 grayscale contrast-[1.2] opacity-40 mix-blend-luminosity">
+<img class="w-full h-full object-cover" data-alt="dark minimalist top-down view of a modern city grid with glowing street lights and deep shadows" data-location="Los Angeles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBaKP060p_qyc2k36gHDNDESb9Z9gg0Csp3Ex1MJzH8t1EEdyYxpwcVLgDknGD0fQXUKpqGgF6GM4_M0T5UlbQPziz4rNTr00dqZNwI9j_UGzpN533fZFEZG7QaP03dDX6obWfUk4wxRmHQpnYukNo-q7eysD4qqNawmQS1bnDP41HHrLturtjRpWzN9IlsaF-NO8AhFWIwEQZdhJXc0xeXJhAMQihe4FjAJynCLC2H0jWD96XPXMhKM4JOhXZDFmxYgE_Nq6FvFY5"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 p-4 glass-panel rounded-lg flex items-center gap-4">
+<div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary-container">location_on</span>
+</div>
 <div>
-<p class="text-xs text-on-surface-variant uppercase tracking-widest mb-1">Call / Text</p>
-<p class="text-lg font-headline font-bold text-on-surface">+1 (555) 737-4354</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">schedule</span>
-<div>
-<p class="text-xs text-on-surface-variant uppercase tracking-widest mb-1">Showroom Hours</p>
-<p class="text-lg font-headline font-bold text-on-surface">Mon - Sat: 9AM - 8PM</p>
-<p class="text-sm text-on-surface-variant font-body">Sunday: By Appointment Only</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">alternate_email</span>
-<div>
-<p class="text-xs text-on-surface-variant uppercase tracking-widest mb-1">Instagram</p>
-<a class="text-lg font-headline font-bold text-on-surface hover:text-primary transition-colors underline decoration-primary/30 underline-offset-4" href="#">@sergflips</a>
-</div>
-</div>
-</div>
-</div>
-<!-- Map/Location Card -->
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden h-full relative group">
-<img class="w-full h-full object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-700" data-alt="Stylized dark map view of a metropolitan city area with glowing navigation lines and urban textures" data-location="Miami" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvNqFdsM4yBfgyVzY7PDSG5b2H4Dzu94GsUe6QwlxSGcfqFrVOE1d_i9Pie0OOIR1ByOD02WlUAX1vfwJWa3hduXWJc9gKQo_aDCO1ipPwf9ZP8R9ZkajhYbWESUtbENg1Nwuz6faMVcfMKaN0UBOI8KUg1LtZ52kOVa2re9G9Uw3aEjHnCiGrOI1rZSew_w3L-X6_uFxmm48ghQO0KiFKfdyHXJ_82QxL8h4uCZB3NC4B8KXJnoj_XDjgrVFWIVKB1z1A68vDnZM"/>
-<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
-<div class="absolute bottom-6 left-6">
-<p class="text-xs text-primary font-headline font-bold uppercase tracking-[0.2em] mb-1">Headquarters</p>
-<h4 class="text-2xl font-headline font-bold text-on-surface">Downtown Urban Garage</h4>
-<p class="text-sm text-on-surface-variant font-body">777 Performance Way, Miami, FL</p>
-</div>
-<div class="absolute top-6 right-6">
-<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-2xl shadow-primary/50 animate-pulse">
-<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<p class="text-xs font-bold tracking-widest text-primary-container uppercase">Headquarters</p>
+<p class="font-body text-sm font-medium">90210 Luxury Way, Beverly Hills, CA</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-</section>
-<!-- Strong CTA Section -->
-<section class="max-w-7xl mx-auto px-8 mt-24">
-<div class="relative bg-surface-container-low rounded-xl p-1 md:p-2 overflow-hidden">
-<div class="bg-surface-container-lowest border-none rounded-lg p-12 md:p-20 text-center relative z-10">
-<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
-<span class="material-symbols-outlined text-primary text-6xl mb-6 block" style="font-variation-settings: 'FILL' 1;">bolt</span>
-<h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-6 tracking-tight">Need a <span class="text-secondary italic">Fast</span> Response?</h2>
-<p class="text-on-surface-variant text-xl mb-10 max-w-2xl mx-auto font-body">
-                        Our DM is the fastest way to get a quote or book a test drive. We're active 24/7.
-                    </p>
-<a class="inline-flex items-center gap-3 bg-on-surface text-surface px-10 py-5 rounded-lg font-headline font-black text-xl hover:bg-primary transition-all duration-300 group" href="#">
-                        Message Us on Instagram
-                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+<!-- Asymmetric Image Section -->
+<section class="mt-32 relative h-[500px] rounded-3xl overflow-hidden">
+<img class="w-full h-full object-cover object-center" data-alt="cinematic close up of a sleek dark sports car steering wheel and carbon fiber dashboard under moody blue studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDURHuDJRa-9S3Uqy_CIwtjU7Z6C-8BUrqLVQfO9kPx5iFKFdLq_83YJIU3vTihZ79KuCSRPmGmk26pehGlWcKdYa2Jy_IywRez_JU5e5mv3dSla2DWa4lca1Ao0P7bTkw3Rlhg1SrgVT0FNFDi1x2qltlj4ybtcihEizH5BH7xz23X1GsOPP-nUpLHC1HZSeB6-sGY_4oFZT0Jmszta4PK02I-jhMgaXIWdLIb3rYu1WDH2eWbFOtFBPkafNUQuFGhPe9iwdbZSmy4"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
+<div class="absolute inset-0 flex items-center px-12 md:px-20">
+<div class="max-w-xl">
+<h2 class="text-4xl md:text-5xl font-headline font-black mb-6 tracking-tighter uppercase italic">The Garage <br/>Is Waiting.</h2>
+<p class="text-lg text-on-surface-variant font-body mb-8">Ready to select your drive? Browse our curated fleet of high-performance vehicles.</p>
+<a class="inline-flex items-center gap-4 text-primary-container font-headline font-bold text-lg hover:gap-6 transition-all" href="#">
+                        EXPLORE FLEET <span class="material-symbols-outlined">trending_flat</span>
 </a>
-</div>
-<!-- Decorative background elements -->
-<div class="absolute top-0 right-0 p-4 opacity-10">
-<span class="text-9xl font-headline font-black text-on-surface-variant">SERG</span>
 </div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-[#0e0e0e] w-full py-16 px-8 border-t border-[#2a2a2a]/10">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-<div class="md:col-span-1">
-<div class="text-3xl font-black text-[#e5e2e1] mb-4 font-headline uppercase tracking-tighter">SERG FLIPS</div>
-<p class="text-[#c1c6d7] font-body italic text-sm mb-6">The Urban Curator: Redefining the automotive showroom experience for the modern enthusiast.</p>
+<footer class="bg-[#1c1b1b] dark:bg-[#1c1b1b] w-full pt-16 pb-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 px-8">
+<div class="space-y-6">
+<div class="text-xl font-bold text-[#e5e2e1] font-headline uppercase">Sergflips</div>
+<p class="text-[#e5e2e1]/60 text-sm leading-relaxed">Defining the next generation of luxury mobility through technical precision and white-glove service.</p>
+</div>
+<div>
+<h4 class="font-headline font-bold mb-6 text-primary-container">Quick Links</h4>
+<ul class="space-y-3 font-['Inter'] text-sm text-[#e5e2e1]">
+<li><a class="text-[#e5e2e1]/60 hover:text-[#adc7ff] transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-[#e5e2e1]/60 hover:text-[#adc7ff] transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-[#e5e2e1]/60 hover:text-[#adc7ff] transition-colors" href="#">FAQ</a></li>
+<li><a class="text-[#e5e2e1]/60 hover:text-[#adc7ff] transition-colors" href="#">Fleet Guide</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold mb-6 text-primary-container">Connect</h4>
 <div class="flex gap-4">
-<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-all" href="#">
-<span class="material-symbols-outlined text-sm">public</span>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="public">public</span>
 </a>
-<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-all" href="#">
-<span class="material-symbols-outlined text-sm">camera</span>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="distance">distance</span>
 </a>
 </div>
 </div>
-<div class="md:col-span-1">
-<h4 class="text-on-surface font-headline font-bold uppercase tracking-widest text-xs mb-6">Navigation</h4>
-<ul class="space-y-4">
-<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="index.html">Home</a></li>
-<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="inventory.html">Inventory</a></li>
-<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="financing.html">Financing</a></li>
-<li><a class="text-[#e9c349] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm font-bold" href="contact.html">Contact</a></li>
-</ul>
+<div class="space-y-4">
+<h4 class="font-headline font-bold mb-6 text-primary-container">Newsletter</h4>
+<div class="flex">
+<input class="bg-surface-container-high border-none rounded-l-lg p-3 text-sm focus:ring-0 w-full" placeholder="Email" type="email"/>
+<button class="bg-primary-container text-on-primary-container px-4 rounded-r-lg font-bold">
+<span class="material-symbols-outlined">send</span>
+</button>
 </div>
-<div class="md:col-span-1">
-<h4 class="text-on-surface font-headline font-bold uppercase tracking-widest text-xs mb-6">Contact Info</h4>
-<ul class="space-y-4">
-<li class="text-[#c1c6d7] font-body text-sm flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">mail</span> inquiry@sergflips.com
-                    </li>
-<li class="text-[#c1c6d7] font-body text-sm flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">phone</span> +1 (555) 737-4354
-                    </li>
-<li class="text-[#c1c6d7] font-body text-sm flex items-center gap-2">
-<span class="material-symbols-outlined text-sm">location_on</span> Indianapolis, IN — <span class="text-[#e9c349]">Delivery available nationwide</span>
-                    </li>
-</ul>
 </div>
-<div class="md:col-span-1">
-<h4 class="text-on-surface font-headline font-bold uppercase tracking-widest text-xs mb-6">Legal</h4>
-<ul class="space-y-4">
-<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="#">Terms of Service</a></li>
-<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="#">Privacy Policy</a></li>
-</ul>
-<div class="mt-8 pt-8 border-t border-outline-variant/10 text-[#c1c6d7] font-body text-[10px] tracking-widest uppercase">
-                    © 2024 SERG FLIPS. ALL RIGHTS RESERVED.
-                </div>
 </div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/10 text-center">
+<p class="font-['Inter'] text-sm text-[#e5e2e1]/60">© 2024 Sergflips. High-Performance Excellence.</p>
 </div>
 </footer>
 </body></html>

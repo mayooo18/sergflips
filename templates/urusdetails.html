@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#574500",
+              "on-secondary-container": "#342800",
+              "inverse-on-surface": "#313030",
+              "on-primary": "#112f5e",
+              "on-background": "#e5e2e1",
+              "on-primary-fixed-variant": "#2b4676",
+              "surface-variant": "#353534",
+              "primary-fixed-dim": "#adc7ff",
+              "primary-container": "#adc7ff",
+              "inverse-surface": "#e5e2e1",
+              "background": "#131313",
+              "on-primary-container": "#385283",
+              "surface-bright": "#393939",
+              "secondary-container": "#ae8d10",
+              "outline-variant": "#44474f",
+              "on-secondary": "#3c2f00",
+              "error": "#ffb4ab",
+              "surface-container-highest": "#353534",
+              "tertiary-container": "#e9c349",
+              "primary-fixed": "#d7e2ff",
+              "on-surface": "#e5e2e1",
+              "on-error-container": "#ffdad6",
+              "tertiary-fixed": "#ffe087",
+              "surface": "#131313",
+              "error-container": "#93000a",
+              "on-tertiary-container": "#655000",
+              "surface-container-low": "#1c1b1b",
+              "on-tertiary-fixed-variant": "#574500",
+              "surface-dim": "#131313",
+              "secondary-fixed-dim": "#e9c349",
+              "primary": "#d8e3ff",
+              "surface-container-high": "#2a2a2a",
+              "surface-tint": "#adc7ff",
+              "on-surface-variant": "#c4c6d0",
+              "on-primary-fixed": "#001a40",
+              "tertiary-fixed-dim": "#e9c349",
+              "surface-container-lowest": "#0e0e0e",
+              "on-error": "#690005",
+              "tertiary": "#ffe088",
+              "secondary": "#e9c349",
+              "on-tertiary": "#3c2f00",
+              "on-tertiary-fixed": "#231a00",
+              "inverse-primary": "#445e8f",
+              "outline": "#8e909a",
+              "on-secondary-fixed": "#231a00",
+              "surface-container": "#201f1f",
+              "secondary-fixed": "#ffe087"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #131313;
+        color: #e5e2e1;
+      }
+      .kinetic-gradient {
+        background: linear-gradient(135deg, #adc7ff 0%, #d8e3ff 100%);
+      }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="max-w-7xl mx-auto mt-6 rounded-2xl sticky top-6 z-50 bg-zinc-900/70 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex justify-between items-center w-full px-8 py-4">
+<div class="text-2xl font-bold tracking-tighter text-[#e5e2e1] font-headline uppercase">SERGFLIPS</div>
+<div class="hidden md:flex items-center space-x-8 font-headline tracking-tight text-sm font-medium uppercase">
+<a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 duration-300" href="#">Home</a>
+<a class="text-[#adc7ff] border-b-2 border-[#adc7ff] pb-1 hover:scale-105 transition-colors duration-300" href="#">Fleet</a>
+<a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 duration-300" href="#">About</a>
+<a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 duration-300" href="#">Contact</a>
+<a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 duration-300" href="#">Investment</a>
+</div>
+<button class="kinetic-gradient text-on-primary-container px-6 py-2 rounded-lg font-headline font-bold text-sm tracking-widest hover:scale-105 active:scale-95 duration-200">
+            BOOK NOW
+        </button>
+</nav>
+<main class="max-w-7xl mx-auto px-6 mt-12 mb-24">
+<!-- Back Link & Header -->
+<div class="flex flex-col gap-6 mb-12">
+<a class="flex items-center gap-2 text-primary-fixed-dim hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+<span class="font-headline uppercase text-xs tracking-widest">Back to Fleet</span>
+</a>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<h1 class="text-5xl md:text-7xl font-headline font-bold tracking-tighter text-on-surface">
+                    Lamborghini Urus
+                </h1>
+<div class="flex flex-col md:items-end">
+<span class="text-secondary font-headline text-3xl font-bold">$1,450<span class="text-sm font-medium opacity-60">/Day</span></span>
+<span class="text-on-surface-variant text-xs uppercase tracking-widest">Excl. Security Deposit</span>
+</div>
+</div>
+</div>
+<!-- Hero & Gallery Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[400px] md:h-[700px] mb-20">
+<div class="md:col-span-3 md:row-span-2 relative overflow-hidden rounded-xl bg-surface-container-high group">
+<img alt="Lamborghini Urus Exterior" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Cinematic wide shot of a matte black Lamborghini Urus parked in a minimalist concrete architectural space with dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGt49jptWpn547QdeoJq1nHPYyx68SnmNdXJACTUTUODn-NIxCH-7nBOZLU1ngKef9yxK0U6MC0IWzLzXRuZO9oCXidg8Xp4Y2PNUPfW1_eiYFsaVAZfzDUCy1glUKjmL5eYPL-RK2sW-Ps1ihrxV4cpaSENaeh6gMfqYKlx_P0KzQ1cKrPcHsvynf1BRXaIOS6idqWdQ2qdMonxfkdNW4-43HE_J6J4A_nA1gOZtqBkLD_bzspWRBAg9W9A4UnpRSanK3RRs3TnFv"/>
+<div class="absolute bottom-6 left-6 bg-surface-bright/40 backdrop-blur-md px-4 py-2 rounded-full border border-outline-variant/20">
+<span class="text-[10px] font-headline uppercase tracking-widest text-on-surface">Exterior View</span>
+</div>
+</div>
+<div class="hidden md:block relative overflow-hidden rounded-xl bg-surface-container-high group">
+<img alt="Lamborghini Urus Interior" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close-up of Lamborghini Urus interior featuring premium Alcantara stitching, carbon fiber details, and digital dashboard cockpit lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw79MeHqPijvrHwUK0LOT0GBhOUxequOEtQco6k5Ep9nOsfGGw00RQT-WIUnUQAIWooPb195pZze6a8IUjmvUxvYPa5SlNhd360DhloRM9zj3sHQM2oQvv5STCGAGmemk9YksGwysyuX15Ashw2dSZV4d1Zl08cQPbwkNM9TO2iRoyX_4ZyCMA07k9d0Zr5tINYvEMmrOTRy9a8o2q9Beuf5RF5gxzQuEYbe-rKyEXNpgGxWod2paoAeTMsRuYG5N03YzSwDxuxy5f"/>
+</div>
+<div class="hidden md:block relative overflow-hidden rounded-xl bg-surface-container-high group">
+<img alt="Lamborghini Urus Detail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Extreme close-up of the Lamborghini badge and front hexagonal grille mesh of a black Urus super SUV" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGhssma0OMkus8OOjWw_vnIqnjpjTy8ypFIdCpx1PM9157xjFyZHtVpuD0RkPP83tzsIr_1WFJoMYt_4-VKllKX5SUrBrEe5Lbv1058BX08Hd-4DMo_eQ0KfPEk96RO_cTfMVm-ISDyyxAAr-k5bT9Vh93t3NaXOhlTqkci2Ze_50oapab_00jcltP-8_7gzmCYs8tSp6zKOTYtccs_4aUKPSp3QRzGvNLADSL4qzfD1Fg-mtUbmk0nSKzjzYt7CZmsHFoPmqfFD36"/>
+</div>
+</section>
+<!-- Product Specs & Description Split -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Technical Specs (Left/Sidebar style) -->
+<div class="lg:col-span-4 space-y-12 order-2 lg:order-1">
+<div class="bg-surface-container-low p-8 rounded-2xl space-y-8">
+<h3 class="font-headline text-xs uppercase tracking-[0.3em] text-secondary">Performance Data</h3>
+<div class="space-y-6">
+<div class="flex justify-between items-center border-b border-outline-variant/10 pb-4">
+<span class="text-on-surface-variant text-sm">Engine</span>
+<span class="font-headline font-medium">4.0L V8 Bi-Turbo</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/10 pb-4">
+<span class="text-on-surface-variant text-sm">Power</span>
+<span class="font-headline font-medium text-primary-fixed-dim">650 HP</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/10 pb-4">
+<span class="text-on-surface-variant text-sm">Top Speed</span>
+<span class="font-headline font-medium">190 MPH</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/10 pb-4">
+<span class="text-on-surface-variant text-sm">0-60 MPH</span>
+<span class="font-headline font-medium">3.6 SEC</span>
+</div>
+<div class="flex justify-between items-center pb-2">
+<span class="text-on-surface-variant text-sm">Transmission</span>
+<span class="font-headline font-medium">8-Speed Auto</span>
+</div>
+</div>
+</div>
+<div class="p-8 rounded-2xl bg-surface-container-highest flex items-center gap-6 group cursor-pointer">
+<div class="w-12 h-12 rounded-full kinetic-gradient flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined" data-weight="fill">shield</span>
+</div>
+<div>
+<h4 class="font-headline text-sm font-bold">Premium Concierge</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">24/7 Roadside support and doorstep delivery included.</p>
+</div>
+</div>
+</div>
+<!-- Narrative Content (Right) -->
+<div class="lg:col-span-8 space-y-10 order-1 lg:order-2">
+<div class="space-y-6">
+<h2 class="font-headline text-3xl font-light tracking-tight text-on-surface">The Soul of a Supercar in the Body of an SUV.</h2>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                        The Lamborghini Urus isn't just an SUV; it is a declaration of dominance. Merging the soul of the Aventador with the versatility of a daily driver, the Urus stands as the world's first Super Sport Utility Vehicle. Powered by a thunderous 4.0-liter V8 twin-turbo engine producing 650 HP, every acceleration is a visceral experience that defies the laws of physics for a vehicle of its stature.
+                    </p>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                        Step inside to find an aeronautics-inspired cockpit. The interior is a masterpiece of Italian craftsmanship, swathed in premium Alcantara and hand-stitched leather. The "Tamburo" driving mode selector allows you to transform the vehicle's character from the refined "Strada" for business arrivals to the aggressive "Corsa" for spirited coastal drives.
+                    </p>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                        Whether you are making a grand entrance at a high-profile luxury event or navigating a weekend getaway through winding mountain roads, the Urus provides a dual personality of unparalleled luxury and untamed performance. It is the ultimate choice for those who refuse to compromise on either utility or prestige.
+                    </p>
+</div>
+<!-- Call to Action Section -->
+<div class="pt-8 flex flex-col sm:flex-row gap-6">
+<button class="kinetic-gradient text-on-primary-container px-12 py-5 rounded-xl font-headline font-bold text-lg tracking-widest hover:scale-[1.02] active:scale-95 transition-all duration-300 shadow-2xl shadow-primary-container/20">
+                        BOOK THIS VEHICLE
+                    </button>
+<button class="border border-outline-variant/30 hover:bg-surface-bright/20 text-on-surface px-8 py-5 rounded-xl font-headline font-medium text-sm tracking-widest transition-all duration-300 uppercase">
+                        View Full Fleet
+                    </button>
+</div>
+<!-- Additional Detail Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-16">
+<div class="space-y-4">
+<h4 class="font-headline text-xs uppercase tracking-widest text-secondary">Interior Experience</h4>
+<div class="aspect-video rounded-xl overflow-hidden bg-surface-container-low">
+<img alt="Urus Interior Detail" class="w-full h-full object-cover" data-alt="Wide internal view of the Lamborghini Urus cockpit showing the dual touchscreen interface and yellow contrast stitching on black leather" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALTtRh_SvbjIWvaqsU2vS87GdLzStyn4wbqnMdJsFfL4RPFJVjRo0uwjMUMsH0qdYbxpxuGy6ukcUUyHdNz1SrLGhfOpd572bI5Ib32cbvDYroQU3XqUMLwipRMX2TeoX9xK2JVTq587LWzCsU-j8qygUDicJhViVO_gTFVaaUjPKvzhkFxXThfDm7dEz341SGSggCFiqpOpySseIhBbjwf2hRYdLV89mQtEWPm9U7oNOOe_0DvMlYdv5Ldk0Y2SViijGWCZBN56Ik"/>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline text-xs uppercase tracking-widest text-secondary">Aerodynamic Design</h4>
+<div class="aspect-video rounded-xl overflow-hidden bg-surface-container-low">
+<img alt="Urus Rear Detail" class="w-full h-full object-cover" data-alt="Rear view of a black Lamborghini Urus focusing on the quad exhaust tips and the Y-shaped LED taillights at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE4tSWb-tkH0yKE6c8WvAb1SBKKZ8wOwkWVVA_jh1xXxNGqRfEVmrD8f44Fu1C3aIZw-stbukGzfevFes3-DtR43nLH7KGVyk_tIZc3Yg4ZQByKnwqDn3qHO-plwgkjOTHAkcxnLY8nTrDE74hDAZzDJcJYSrJElm-_IVqUrS53yM8rvMrmsnngY-lUnmpW7BbnZEcVJ2DjvVPDbFf0gIoxw4EBeViVV2QZ-hYREuT2bSsE5Fp7CevpKwqFfV6R216u7zAMrzLpN_F"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-zinc-800/50 mt-20 bg-[#131313]">
+<div class="max-w-7xl mx-auto py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="text-xl font-bold text-[#e5e2e1] opacity-100 font-headline uppercase tracking-tighter">SERGFLIPS</div>
+<p class="font-['Inter'] text-xs tracking-widest uppercase opacity-60 text-[#adc7ff]">© 2024 SERGFLIPS KINETIC GALLERY. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-['Inter'] text-xs tracking-widest uppercase opacity-60">
+<a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors" href="#">Terms of Service</a>
+<a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors" href="#">Cookie Policy</a>
+<a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors" href="#">Sitemap</a>
+</div>
+</div>
+</footer>
+</body></html>
