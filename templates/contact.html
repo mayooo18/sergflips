@@ -91,20 +91,37 @@
 <nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-[#131313]/80 backdrop-blur-md shadow-[0_10px_30px_-15px_rgba(173,199,255,0.1)]">
 <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
 <div class="flex items-center gap-3">
-<img alt="Logo" class="h-8 w-auto" data-alt="High-end minimalist automotive brand logo for Serg Flips with sleek typography and electric blue accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9On0ePkjl56Xl0r_gNvjfT2BQkl8dUjycsEHV0T8xUqk9_CfJIbi_SOKqPovCyBLKiZz-Jp8m_ejZnrN2jqhLW_1kwCNgnw_VqTzupLAS8Jn94rv4uQVwwBbQO5ALd2pqo-m4DDJQyMaSoaX_HuXnidPNrpK6H8SpjQBMrKS39uCPbZtdCaBQPLwfXZCvW3XgNW-lqAsl8J_bW1LpYw-_ui7XxDh_xDegliho3hdqlrnimQQ02ChMHEiESXh_bTgmQuIX4kF81Pc"/>
+
 <span class="text-2xl font-bold tracking-tighter text-[#e5e2e1] uppercase font-headline">SERG FLIPS</span>
 </div>
 <div class="hidden md:flex items-center gap-10">
-<a class="text-[#c1c6d7] hover:text-[#e5e2e1] transition-colors font-body font-medium tracking-wide" href="#">Home</a>
-<a class="text-[#c1c6d7] hover:text-[#e5e2e1] transition-colors font-body font-medium tracking-wide" href="#">Inventory</a>
-<a class="text-[#c1c6d7] hover:text-[#e5e2e1] transition-colors font-body font-medium tracking-wide" href="#">Financing</a>
-<a class="text-[#adc7ff] border-b-2 border-[#adc7ff] pb-1 font-body font-medium tracking-wide" href="#">Contact</a>
+<a class="text-[#c1c6d7] hover:text-[#e5e2e1] transition-colors font-body font-medium tracking-wide" href="index.html">Home</a>
+<a class="text-[#c1c6d7] hover:text-[#e5e2e1] transition-colors font-body font-medium tracking-wide" href="inventory.html">Inventory</a>
+<a class="text-[#c1c6d7] hover:text-[#e5e2e1] transition-colors font-body font-medium tracking-wide" href="financing.html">Financing</a>
+<a class="text-[#adc7ff] border-b-2 border-[#adc7ff] pb-1 font-body font-medium tracking-wide" href="contact.html">Contact</a>
 </div>
-<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-headline font-bold px-6 py-2 rounded-lg hover:opacity-80 transition-all active:scale-95">
+<button class="hidden md:block bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-headline font-bold px-6 py-2 rounded-lg hover:opacity-80 transition-all active:scale-95">
                 Message Us
             </button>
+<button id="menu-toggle" class="md:hidden text-on-surface focus:outline-none">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<div id="mobile-menu" class="hidden md:hidden flex-col gap-6 px-8 py-6 border-t border-white/10 bg-[#131313]/95">
+<a class="text-[#c1c6d7] font-medium tracking-wide" href="index.html">Home</a>
+<a class="text-[#c1c6d7] font-medium tracking-wide" href="inventory.html">Inventory</a>
+<a class="text-[#c1c6d7] font-medium tracking-wide" href="financing.html">Financing</a>
+<a class="text-[#adc7ff] font-medium tracking-wide" href="contact.html">Contact</a>
 </div>
 </nav>
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function () {
+    var menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+    menu.classList.toggle('flex');
+  });
+</script>
 <main class="pt-32 pb-24">
 <!-- Hero Section -->
 <header class="max-w-7xl mx-auto px-8 mb-20">
@@ -241,10 +258,10 @@
 <div class="md:col-span-1">
 <h4 class="text-on-surface font-headline font-bold uppercase tracking-widest text-xs mb-6">Navigation</h4>
 <ul class="space-y-4">
-<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="#">Home</a></li>
-<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="#">Inventory</a></li>
-<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="#">Financing</a></li>
-<li><a class="text-[#e9c349] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm font-bold" href="#">Contact</a></li>
+<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="index.html">Home</a></li>
+<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="inventory.html">Inventory</a></li>
+<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="financing.html">Financing</a></li>
+<li><a class="text-[#e9c349] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm font-bold" href="contact.html">Contact</a></li>
 </ul>
 </div>
 <div class="md:col-span-1">
