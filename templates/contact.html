@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | SERG FLIPS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#004493",
+              "surface-container-lowest": "#0e0e0e",
+              "on-secondary-fixed": "#241a00",
+              "on-background": "#e5e2e1",
+              "on-tertiary-container": "#4f3e00",
+              "primary-fixed-dim": "#adc7ff",
+              "inverse-surface": "#e5e2e1",
+              "on-primary": "#002e68",
+              "secondary-fixed-dim": "#e9c349",
+              "surface-container-low": "#1c1b1b",
+              "inverse-on-surface": "#313030",
+              "on-secondary-fixed-variant": "#574500",
+              "primary-fixed": "#d8e2ff",
+              "secondary-container": "#af8d11",
+              "tertiary": "#eac34a",
+              "surface-container-highest": "#353534",
+              "outline": "#8b90a0",
+              "secondary-fixed": "#ffe088",
+              "on-tertiary": "#3c2f00",
+              "on-error-container": "#ffdad6",
+              "on-error": "#690005",
+              "on-surface": "#e5e2e1",
+              "surface": "#131313",
+              "primary-container": "#4a8eff",
+              "surface-tint": "#adc7ff",
+              "surface-container-high": "#2a2a2a",
+              "tertiary-fixed-dim": "#e9c349",
+              "surface-container": "#201f1f",
+              "inverse-primary": "#005bc0",
+              "tertiary-fixed": "#ffe088",
+              "surface-bright": "#393939",
+              "secondary": "#e9c349",
+              "on-primary-container": "#00285b",
+              "on-secondary-container": "#342800",
+              "primary": "#adc7ff",
+              "on-primary-fixed": "#001a41",
+              "on-tertiary-fixed": "#241a00",
+              "outline-variant": "#414754",
+              "on-tertiary-fixed-variant": "#574500",
+              "on-secondary": "#3c2f00",
+              "on-surface-variant": "#c1c6d7",
+              "tertiary-container": "#cca830",
+              "background": "#131313",
+              "error": "#ffb4ab",
+              "error-container": "#93000a",
+              "surface-dim": "#131313",
+              "surface-variant": "#353534"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        background-color: #131313;
+        color: #e5e2e1;
+        font-family: 'Inter', sans-serif;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .editorial-text-shadow {
+        text-shadow: 0 10px 30px rgba(173,199,255,0.15);
+      }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-[#131313]/80 backdrop-blur-md shadow-[0_10px_30px_-15px_rgba(173,199,255,0.1)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-3">
+<img alt="Logo" class="h-8 w-auto" data-alt="High-end minimalist automotive brand logo for Serg Flips with sleek typography and electric blue accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9On0ePkjl56Xl0r_gNvjfT2BQkl8dUjycsEHV0T8xUqk9_CfJIbi_SOKqPovCyBLKiZz-Jp8m_ejZnrN2jqhLW_1kwCNgnw_VqTzupLAS8Jn94rv4uQVwwBbQO5ALd2pqo-m4DDJQyMaSoaX_HuXnidPNrpK6H8SpjQBMrKS39uCPbZtdCaBQPLwfXZCvW3XgNW-lqAsl8J_bW1LpYw-_ui7XxDh_xDegliho3hdqlrnimQQ02ChMHEiESXh_bTgmQuIX4kF81Pc"/>
+<span class="text-2xl font-bold tracking-tighter text-[#e5e2e1] uppercase font-headline">SERG FLIPS</span>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#c1c6d7] hover:text-[#e5e2e1] transition-colors font-body font-medium tracking-wide" href="#">Home</a>
+<a class="text-[#c1c6d7] hover:text-[#e5e2e1] transition-colors font-body font-medium tracking-wide" href="#">Inventory</a>
+<a class="text-[#c1c6d7] hover:text-[#e5e2e1] transition-colors font-body font-medium tracking-wide" href="#">Financing</a>
+<a class="text-[#adc7ff] border-b-2 border-[#adc7ff] pb-1 font-body font-medium tracking-wide" href="#">Contact</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-headline font-bold px-6 py-2 rounded-lg hover:opacity-80 transition-all active:scale-95">
+                Message Us
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<header class="max-w-7xl mx-auto px-8 mb-20">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
+<div>
+<span class="text-secondary font-headline italic tracking-widest text-sm uppercase mb-4 block">Ready to Upgrade?</span>
+<h1 class="text-6xl md:text-8xl font-headline font-bold text-on-surface tracking-tighter leading-none editorial-text-shadow">
+                        Get in the <span class="text-primary italic">Driver’s</span> Seat Today
+                    </h1>
+</div>
+<div class="pb-4">
+<p class="text-on-surface-variant text-lg max-w-md font-body">
+                        Whether you're looking for your next curated vehicle selection or need expert advice on financing, our team is standing by to help you take the wheel.
+                    </p>
+</div>
+</div>
+</header>
+<!-- Main Interaction Section -->
+<section class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Contact Form Section -->
+<div class="lg:col-span-7 bg-surface-container-low rounded-xl p-8 md:p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<h2 class="text-3xl font-headline font-bold mb-8 text-on-surface">Direct Inquiry</h2>
+<form class="space-y-6 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-headline uppercase tracking-widest text-on-surface-variant ml-1">Full Name</label>
+<input class="w-full bg-surface-container-lowest border-none focus:ring-2 focus:ring-primary text-on-surface p-4 rounded-lg placeholder:text-outline-variant transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-headline uppercase tracking-widest text-on-surface-variant ml-1">Email Address</label>
+<input class="w-full bg-surface-container-lowest border-none focus:ring-2 focus:ring-primary text-on-surface p-4 rounded-lg placeholder:text-outline-variant transition-all" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-headline uppercase tracking-widest text-on-surface-variant ml-1">Phone Number</label>
+<input class="w-full bg-surface-container-lowest border-none focus:ring-2 focus:ring-primary text-on-surface p-4 rounded-lg placeholder:text-outline-variant transition-all" placeholder="+1 (555) 000-0000" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-headline uppercase tracking-widest text-on-surface-variant ml-1">Message</label>
+<textarea class="w-full bg-surface-container-lowest border-none focus:ring-2 focus:ring-primary text-on-surface p-4 rounded-lg placeholder:text-outline-variant transition-all resize-none" placeholder="Tell us about the vehicle you're interested in..." rows="5"></textarea>
+</div>
+<button class="w-full bg-gradient-to-r from-primary to-primary-container text-on-primary-container font-headline font-black py-5 rounded-lg text-lg tracking-tight hover:opacity-90 transition-all active:scale-[0.98] shadow-lg shadow-primary/10" type="submit">
+                            SEND MESSAGE
+                        </button>
+</form>
+</div>
+<!-- Business Info & Bento Aside -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Quick Info Card -->
+<div class="bg-surface-container-high p-8 rounded-xl border-l-4 border-secondary">
+<h3 class="text-xl font-headline font-bold text-on-surface mb-6">Business Details</h3>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">phone_iphone</span>
+<div>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest mb-1">Call / Text</p>
+<p class="text-lg font-headline font-bold text-on-surface">+1 (555) 737-4354</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">schedule</span>
+<div>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest mb-1">Showroom Hours</p>
+<p class="text-lg font-headline font-bold text-on-surface">Mon - Sat: 9AM - 8PM</p>
+<p class="text-sm text-on-surface-variant font-body">Sunday: By Appointment Only</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">alternate_email</span>
+<div>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest mb-1">Instagram</p>
+<a class="text-lg font-headline font-bold text-on-surface hover:text-primary transition-colors underline decoration-primary/30 underline-offset-4" href="#">@sergflips</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Map/Location Card -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden h-full relative group">
+<img class="w-full h-full object-cover opacity-50 grayscale hover:grayscale-0 transition-all duration-700" data-alt="Stylized dark map view of a metropolitan city area with glowing navigation lines and urban textures" data-location="Miami" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvNqFdsM4yBfgyVzY7PDSG5b2H4Dzu94GsUe6QwlxSGcfqFrVOE1d_i9Pie0OOIR1ByOD02WlUAX1vfwJWa3hduXWJc9gKQo_aDCO1ipPwf9ZP8R9ZkajhYbWESUtbENg1Nwuz6faMVcfMKaN0UBOI8KUg1LtZ52kOVa2re9G9Uw3aEjHnCiGrOI1rZSew_w3L-X6_uFxmm48ghQO0KiFKfdyHXJ_82QxL8h4uCZB3NC4B8KXJnoj_XDjgrVFWIVKB1z1A68vDnZM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<p class="text-xs text-primary font-headline font-bold uppercase tracking-[0.2em] mb-1">Headquarters</p>
+<h4 class="text-2xl font-headline font-bold text-on-surface">Downtown Urban Garage</h4>
+<p class="text-sm text-on-surface-variant font-body">777 Performance Way, Miami, FL</p>
+</div>
+<div class="absolute top-6 right-6">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shadow-2xl shadow-primary/50 animate-pulse">
+<span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Strong CTA Section -->
+<section class="max-w-7xl mx-auto px-8 mt-24">
+<div class="relative bg-surface-container-low rounded-xl p-1 md:p-2 overflow-hidden">
+<div class="bg-surface-container-lowest border-none rounded-lg p-12 md:p-20 text-center relative z-10">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+<span class="material-symbols-outlined text-primary text-6xl mb-6 block" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-6 tracking-tight">Need a <span class="text-secondary italic">Fast</span> Response?</h2>
+<p class="text-on-surface-variant text-xl mb-10 max-w-2xl mx-auto font-body">
+                        Our DM is the fastest way to get a quote or book a test drive. We're active 24/7.
+                    </p>
+<a class="inline-flex items-center gap-3 bg-on-surface text-surface px-10 py-5 rounded-lg font-headline font-black text-xl hover:bg-primary transition-all duration-300 group" href="#">
+                        Message Us on Instagram
+                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Decorative background elements -->
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="text-9xl font-headline font-black text-on-surface-variant">SERG</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full py-16 px-8 border-t border-[#2a2a2a]/10">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-1">
+<div class="text-3xl font-black text-[#e5e2e1] mb-4 font-headline uppercase tracking-tighter">SERG FLIPS</div>
+<p class="text-[#c1c6d7] font-body italic text-sm mb-6">The Urban Curator: Redefining the automotive showroom experience for the modern enthusiast.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:text-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">camera</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-1">
+<h4 class="text-on-surface font-headline font-bold uppercase tracking-widest text-xs mb-6">Navigation</h4>
+<ul class="space-y-4">
+<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="#">Home</a></li>
+<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="#">Inventory</a></li>
+<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="#">Financing</a></li>
+<li><a class="text-[#e9c349] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm font-bold" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="text-on-surface font-headline font-bold uppercase tracking-widest text-xs mb-6">Contact Info</h4>
+<ul class="space-y-4">
+<li class="text-[#c1c6d7] font-body text-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">mail</span> inquiry@sergflips.com
+                    </li>
+<li class="text-[#c1c6d7] font-body text-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">phone</span> +1 (555) 737-4354
+                    </li>
+<li class="text-[#c1c6d7] font-body text-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">location_on</span> Miami, Florida
+                    </li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="text-on-surface font-headline font-bold uppercase tracking-widest text-xs mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="#">Terms of Service</a></li>
+<li><a class="text-[#c1c6d7] hover:text-[#adc7ff] hover:underline underline-offset-4 transition-colors font-body text-sm" href="#">Privacy Policy</a></li>
+</ul>
+<div class="mt-8 pt-8 border-t border-outline-variant/10 text-[#c1c6d7] font-body text-[10px] tracking-widest uppercase">
+                    © 2024 SERG FLIPS. ALL RIGHTS RESERVED.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>
