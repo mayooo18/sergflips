@@ -53,19 +53,17 @@
   <div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
     <a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors" href="index.html">Home</a>
     <a class="text-[#adc7ff] border-b-2 border-[#adc7ff] pb-1" href="fleet.html">Fleet</a>
-    <a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors" href="booking.html">Booking</a>
     <a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors" href="about.html">About</a>
     <a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors" href="contact.html">Contact</a>
   </div>
   <div class="flex items-center gap-3">
-    <a href="booking.html" class="bg-gradient-to-br from-primary-container to-primary text-on-primary-container px-6 py-2 rounded-xl font-headline font-bold hover:scale-105 active:scale-95 transition-all duration-300">Book Now</a>
+    <a href="contact.html" class="bg-gradient-to-br from-primary-container to-primary text-on-primary-container px-6 py-2 rounded-xl font-headline font-bold hover:scale-105 active:scale-95 transition-all duration-300">Contact Us</a>
     <button id="menu-toggle" class="md:hidden text-[#e5e2e1]"><span class="material-symbols-outlined">menu</span></button>
   </div>
 </nav>
 <div id="mobile-menu" class="hidden flex-col gap-4 px-8 py-6 bg-neutral-900/95 max-w-7xl mx-auto rounded-2xl mt-2">
   <a class="text-[#e5e2e1] font-bold font-headline" href="index.html">Home</a>
   <a class="text-[#adc7ff] font-bold font-headline" href="fleet.html">Fleet</a>
-  <a class="text-[#e5e2e1] font-bold font-headline" href="booking.html">Booking</a>
   <a class="text-[#e5e2e1] font-bold font-headline" href="about.html">About</a>
   <a class="text-[#e5e2e1] font-bold font-headline" href="contact.html">Contact</a>
 </div>
@@ -128,7 +126,7 @@
           <span class="text-2xl font-black font-headline">$120<span class="text-sm font-normal text-on-surface-variant">/day</span></span>
           <span class="text-xs bg-primary-container/20 text-primary-container px-2 py-1 rounded-lg font-bold">Available</span>
         </div>
-        <a href="booking.html" class="block w-full py-3 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest text-center rounded-lg hover:scale-105 transition-transform">Book Now</a>
+        <button onclick="openModal('modal-bmw')" class="block w-full py-3 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest text-center rounded-lg hover:scale-105 transition-transform">Book Now</button>
       </div>
     </div>
 
@@ -148,7 +146,7 @@
           <span class="text-2xl font-black font-headline">$75<span class="text-sm font-normal text-on-surface-variant">/day</span></span>
           <span class="text-xs bg-primary-container/20 text-primary-container px-2 py-1 rounded-lg font-bold">Available</span>
         </div>
-        <a href="booking.html" class="block w-full py-3 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest text-center rounded-lg hover:scale-105 transition-transform">Book Now</a>
+        <button onclick="openModal('modal-rav4')" class="block w-full py-3 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest text-center rounded-lg hover:scale-105 transition-transform">Book Now</button>
       </div>
     </div>
 
@@ -169,7 +167,7 @@
           <span class="text-2xl font-black font-headline">$60<span class="text-sm font-normal text-on-surface-variant">/day</span></span>
           <span class="text-xs bg-primary-container/20 text-primary-container px-2 py-1 rounded-lg font-bold">Available</span>
         </div>
-        <a href="booking.html" class="block w-full py-3 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest text-center rounded-lg hover:scale-105 transition-transform">Book Now</a>
+        <a href="contact.html" class="block w-full py-3 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest text-center rounded-lg hover:scale-105 transition-transform">Book Now</a>
       </div>
     </div>
 
@@ -190,7 +188,7 @@
           <span class="text-2xl font-black font-headline">$220<span class="text-sm font-normal text-on-surface-variant">/day</span></span>
           <span class="text-xs bg-secondary/20 text-secondary px-2 py-1 rounded-lg font-bold">Available</span>
         </div>
-        <a href="booking.html" class="block w-full py-3 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest text-center rounded-lg hover:scale-105 transition-transform">Book Now</a>
+        <a href="contact.html" class="block w-full py-3 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest text-center rounded-lg hover:scale-105 transition-transform">Book Now</a>
       </div>
     </div>
 
@@ -210,7 +208,7 @@
           <span class="text-2xl font-black font-headline">$180<span class="text-sm font-normal text-on-surface-variant">/day</span></span>
           <span class="text-xs bg-primary-container/20 text-primary-container px-2 py-1 rounded-lg font-bold">Available</span>
         </div>
-        <a href="booking.html" class="block w-full py-3 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest text-center rounded-lg hover:scale-105 transition-transform">Book Now</a>
+        <a href="contact.html" class="block w-full py-3 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest text-center rounded-lg hover:scale-105 transition-transform">Book Now</a>
       </div>
     </div>
 
@@ -231,7 +229,7 @@
           <span class="text-2xl font-black font-headline">$85<span class="text-sm font-normal text-on-surface-variant">/day</span></span>
           <span class="text-xs bg-primary-container/20 text-primary-container px-2 py-1 rounded-lg font-bold">Available</span>
         </div>
-        <a href="booking.html" class="block w-full py-3 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest text-center rounded-lg hover:scale-105 transition-transform">Book Now</a>
+        <a href="contact.html" class="block w-full py-3 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest text-center rounded-lg hover:scale-105 transition-transform">Book Now</a>
       </div>
     </div>
 
@@ -255,7 +253,7 @@
         </div>
         <div class="grid grid-cols-2 gap-3">
           <a href="urusdetails.html" class="block py-3 border border-outline-variant/30 text-on-surface font-headline font-bold text-xs uppercase tracking-widest text-center rounded-lg hover:bg-surface-bright transition-colors">View Details</a>
-          <a href="booking.html" class="block py-3 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest text-center rounded-lg hover:scale-105 transition-transform">Book Now</a>
+          <a href="contact.html" class="block py-3 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold text-xs uppercase tracking-widest text-center rounded-lg hover:scale-105 transition-transform">Book Now</a>
         </div>
       </div>
     </div>
@@ -266,18 +264,68 @@
 <footer class="bg-[#1c1b1b] w-full pt-16 pb-8 border-t border-outline-variant/10 mt-16">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 px-8">
     <div><div class="text-xl font-bold text-[#e5e2e1] font-headline uppercase mb-6">Sergflips</div><p class="text-sm text-[#e5e2e1]/60">Premium car rentals. Based in Indianapolis, IN.</p></div>
-    <div><h5 class="text-[#adc7ff] font-headline font-bold mb-6 text-xs uppercase tracking-widest">Navigation</h5><ul class="space-y-4 text-sm text-[#e5e2e1]"><li><a class="hover:text-[#adc7ff] transition-colors" href="index.html">Home</a></li><li><a class="hover:text-[#adc7ff] transition-colors" href="fleet.html">Fleet</a></li><li><a class="hover:text-[#adc7ff] transition-colors" href="booking.html">Booking</a></li><li><a class="hover:text-[#adc7ff] transition-colors" href="about.html">About</a></li><li><a class="hover:text-[#adc7ff] transition-colors" href="contact.html">Contact</a></li></ul></div>
+    <div><h5 class="text-[#adc7ff] font-headline font-bold mb-6 text-xs uppercase tracking-widest">Navigation</h5><ul class="space-y-4 text-sm text-[#e5e2e1]"><li><a class="hover:text-[#adc7ff] transition-colors" href="index.html">Home</a></li><li><a class="hover:text-[#adc7ff] transition-colors" href="fleet.html">Fleet</a></li><li><a class="hover:text-[#adc7ff] transition-colors" href="about.html">About</a></li><li><a class="hover:text-[#adc7ff] transition-colors" href="contact.html">Contact</a></li></ul></div>
     <div><h5 class="text-[#adc7ff] font-headline font-bold mb-6 text-xs uppercase tracking-widest">Support</h5><ul class="space-y-4 text-sm text-[#e5e2e1]"><li><a class="hover:text-[#adc7ff]" href="#">Privacy Policy</a></li><li><a class="hover:text-[#adc7ff]" href="#">Terms</a></li><li><a class="hover:text-[#adc7ff]" href="#">FAQ</a></li></ul></div>
     <div><h5 class="text-[#adc7ff] font-headline font-bold mb-6 text-xs uppercase tracking-widest">Contact</h5><ul class="space-y-3 text-sm text-[#e5e2e1]/60"><li>inquiry@sergflips.com</li><li>+1 (555) 737-4354</li><li>Indianapolis, IN</li></ul></div>
   </div>
   <div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-outline-variant/10 text-center"><p class="text-sm text-[#e5e2e1]/40">© 2024 Sergflips. Premium Car Rentals.</p></div>
 </footer>
 
+<!-- BMW Booking Modal -->
+<div id="modal-bmw" class="hidden fixed inset-0 z-[100] flex items-center justify-center px-4">
+  <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" onclick="closeModal('modal-bmw')"></div>
+  <div class="relative bg-[#2a2a2a] rounded-2xl p-8 max-w-lg w-full shadow-2xl z-10 max-h-[90vh] overflow-y-auto">
+    <button onclick="closeModal('modal-bmw')" class="absolute top-4 right-4 text-[#c4c6d0] hover:text-[#e5e2e1]"><span class="material-symbols-outlined">close</span></button>
+    <p class="text-[#e9c349] font-headline font-bold tracking-widest uppercase text-xs mb-2">Book This Car</p>
+    <h2 class="font-headline font-bold text-2xl mb-1">2021 BMW 3 Series M-Sport</h2>
+    <p class="text-[#adc7ff] font-headline font-bold text-lg mb-6">$120<span class="text-sm font-normal text-[#c4c6d0]">/day</span></p>
+    <form class="space-y-4">
+      <div class="grid grid-cols-2 gap-4">
+        <div><label class="text-xs uppercase tracking-widest text-[#c4c6d0] font-bold block mb-1">Name</label><input type="text" placeholder="John Doe" class="w-full bg-[#1c1b1b] border border-[#44474f]/30 text-[#e5e2e1] px-4 py-2.5 rounded-lg focus:ring-1 focus:ring-[#adc7ff] outline-none placeholder:text-[#c4c6d0]/40"/></div>
+        <div><label class="text-xs uppercase tracking-widest text-[#c4c6d0] font-bold block mb-1">Phone</label><input type="tel" placeholder="+1 (555) 000-0000" class="w-full bg-[#1c1b1b] border border-[#44474f]/30 text-[#e5e2e1] px-4 py-2.5 rounded-lg focus:ring-1 focus:ring-[#adc7ff] outline-none placeholder:text-[#c4c6d0]/40"/></div>
+      </div>
+      <div><label class="text-xs uppercase tracking-widest text-[#c4c6d0] font-bold block mb-1">Email</label><input type="email" placeholder="john@example.com" class="w-full bg-[#1c1b1b] border border-[#44474f]/30 text-[#e5e2e1] px-4 py-2.5 rounded-lg focus:ring-1 focus:ring-[#adc7ff] outline-none placeholder:text-[#c4c6d0]/40"/></div>
+      <div><label class="text-xs uppercase tracking-widest text-[#c4c6d0] font-bold block mb-1">Pickup Date</label><input type="date" class="w-full bg-[#1c1b1b] border border-[#44474f]/30 text-[#e5e2e1] px-4 py-2.5 rounded-lg focus:ring-1 focus:ring-[#adc7ff] outline-none"/></div>
+      <div><label class="text-xs uppercase tracking-widest text-[#c4c6d0] font-bold block mb-1">Message</label><textarea rows="3" placeholder="Any special requests..." class="w-full bg-[#1c1b1b] border border-[#44474f]/30 text-[#e5e2e1] px-4 py-2.5 rounded-lg focus:ring-1 focus:ring-[#adc7ff] outline-none resize-none placeholder:text-[#c4c6d0]/40"></textarea></div>
+      <button type="submit" class="w-full bg-gradient-to-br from-[#adc7ff] to-[#d8e3ff] text-[#385283] font-headline font-bold py-4 rounded-xl hover:scale-105 active:scale-95 transition-all">Submit Request</button>
+    </form>
+  </div>
+</div>
+
+<!-- RAV4 Booking Modal -->
+<div id="modal-rav4" class="hidden fixed inset-0 z-[100] flex items-center justify-center px-4">
+  <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" onclick="closeModal('modal-rav4')"></div>
+  <div class="relative bg-[#2a2a2a] rounded-2xl p-8 max-w-lg w-full shadow-2xl z-10 max-h-[90vh] overflow-y-auto">
+    <button onclick="closeModal('modal-rav4')" class="absolute top-4 right-4 text-[#c4c6d0] hover:text-[#e5e2e1]"><span class="material-symbols-outlined">close</span></button>
+    <p class="text-[#e9c349] font-headline font-bold tracking-widest uppercase text-xs mb-2">Book This Car</p>
+    <h2 class="font-headline font-bold text-2xl mb-1">2019 Toyota RAV4 Adventure</h2>
+    <p class="text-[#adc7ff] font-headline font-bold text-lg mb-6">$75<span class="text-sm font-normal text-[#c4c6d0]">/day</span></p>
+    <form class="space-y-4">
+      <div class="grid grid-cols-2 gap-4">
+        <div><label class="text-xs uppercase tracking-widest text-[#c4c6d0] font-bold block mb-1">Name</label><input type="text" placeholder="John Doe" class="w-full bg-[#1c1b1b] border border-[#44474f]/30 text-[#e5e2e1] px-4 py-2.5 rounded-lg focus:ring-1 focus:ring-[#adc7ff] outline-none placeholder:text-[#c4c6d0]/40"/></div>
+        <div><label class="text-xs uppercase tracking-widets text-[#c4c6d0] font-bold block mb-1">Phone</label><input type="tel" placeholder="+1 (555) 000-0000" class="w-full bg-[#1c1b1b] border border-[#44474f]/30 text-[#e5e2e1] px-4 py-2.5 rounded-lg focus:ring-1 focus:ring-[#adc7ff] outline-none placeholder:text-[#c4c6d0]/40"/></div>
+      </div>
+      <div><label class="text-xs uppercase tracking-widest text-[#c4c6d0] font-bold block mb-1">Email</label><input type="email" placeholder="john@example.com" class="w-full bg-[#1c1b1b] border border-[#44474f]/30 text-[#e5e2e1] px-4 py-2.5 rounded-lg focus:ring-1 focus:ring-[#adc7ff] outline-none placeholder:text-[#c4c6d0]/40"/></div>
+      <div><label class="text-xs uppercase tracking-widest text-[#c4c6d0] font-bold block mb-1">Pickup Date</label><input type="date" class="w-full bg-[#1c1b1b] border border-[#44474f]/30 text-[#e5e2e1] px-4 py-2.5 rounded-lg focus:ring-1 focus:ring-[#adc7ff] outline-none"/></div>
+      <div><label class="text-xs uppercase tracking-widest text-[#c4c6d0] font-bold block mb-1">Message</label><textarea rows="3" placeholder="Any special requests..." class="w-full bg-[#1c1b1b] border border-[#44474f]/30 text-[#e5e2e1] px-4 py-2.5 rounded-lg focus:ring-1 focus:ring-[#adc7ff] outline-none resize-none placeholder:text-[#c4c6d0]/40"></textarea></div>
+      <button type="submit" class="w-full bg-gradient-to-br from-[#adc7ff] to-[#d8e3ff] text-[#385283] font-headline font-bold py-4 rounded-xl hover:scale-105 active:scale-95 transition-all">Submit Request</button>
+    </form>
+  </div>
+</div>
+
 <script>
   document.getElementById('menu-toggle').addEventListener('click', function() {
     var m = document.getElementById('mobile-menu');
     m.classList.toggle('hidden'); m.classList.toggle('flex');
   });
+  function openModal(id) {
+    document.getElementById(id).classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id) {
+    document.getElementById(id).classList.add('hidden');
+    document.body.style.overflow = '';
+  }
 </script>
 </body>
 </html>
