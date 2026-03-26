@@ -1,258 +1,176 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
+<html class="dark" lang="en">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Contact | Sergflips</title>
+<title>Contact | SergFlips Car Rentals</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "on-secondary-fixed-variant": "#574500",
-                        "surface-container-lowest": "#0e0e0e",
-                        "tertiary-fixed": "#ffe087",
-                        "on-secondary": "#3c2f00",
-                        "on-primary-container": "#385283",
-                        "inverse-on-surface": "#313030",
-                        "on-secondary-fixed": "#231a00",
-                        "error-container": "#93000a",
-                        "on-surface": "#e5e2e1",
-                        "on-tertiary-fixed": "#231a00",
-                        "outline-variant": "#44474f",
-                        "on-primary": "#112f5e",
-                        "primary-container": "#adc7ff",
-                        "tertiary-fixed-dim": "#e9c349",
-                        "surface-container-high": "#2a2a2a",
-                        "surface-tint": "#adc7ff",
-                        "background": "#131313",
-                        "on-tertiary-container": "#655000",
-                        "surface-variant": "#353534",
-                        "secondary": "#e9c349",
-                        "error": "#ffb4ab",
-                        "on-primary-fixed-variant": "#2b4676",
-                        "on-surface-variant": "#c4c6d0",
-                        "surface-container-low": "#1c1b1b",
-                        "surface-container-highest": "#353534",
-                        "on-secondary-container": "#342800",
-                        "outline": "#8e909a",
-                        "on-tertiary-fixed-variant": "#574500",
-                        "surface-bright": "#393939",
-                        "primary-fixed": "#d7e2ff",
-                        "secondary-container": "#ae8d10",
-                        "secondary-fixed-dim": "#e9c349",
-                        "primary": "#d8e3ff",
-                        "on-background": "#e5e2e1",
-                        "primary-fixed-dim": "#adc7ff",
-                        "on-error": "#690005",
-                        "on-tertiary": "#3c2f00",
-                        "on-primary-fixed": "#001a40",
-                        "tertiary": "#ffe088",
-                        "tertiary-container": "#e9c349",
-                        "surface-dim": "#131313",
-                        "surface": "#131313",
-                        "on-error-container": "#ffdad6",
-                        "surface-container": "#201f1f",
-                        "inverse-surface": "#e5e2e1",
-                        "inverse-primary": "#445e8f",
-                        "secondary-fixed": "#ffe087"
-                    },
-                    fontFamily: {
-                        "headline": ["Space Grotesk"],
-                        "body": ["Inter"],
-                        "label": ["Inter"]
-                    },
-                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
-                },
-            },
-        }
-    </script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "surface-container-lowest": "#0e0e0e",
+          "on-surface": "#e5e2e1",
+          "outline-variant": "#44474f",
+          "primary-container": "#adc7ff",
+          "surface-container-high": "#2a2a2a",
+          "surface-container-low": "#1c1b1b",
+          "secondary": "#e9c349",
+          "primary": "#d8e3ff",
+          "surface": "#131313",
+          "on-surface-variant": "#c4c6d0",
+          "background": "#131313",
+          "on-primary-container": "#385283",
+        },
+        fontFamily: { "headline": ["Space Grotesk"], "body": ["Inter"] },
+        borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+      },
+    },
+  }
+</script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        body {
-            background-color: #131313;
-            color: #e5e2e1;
-            font-family: 'Inter', sans-serif;
-        }
-        .glass-panel {
-            background: rgba(42, 42, 42, 0.6);
-            backdrop-filter: blur(20px);
-        }
-    </style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+</style>
 </head>
-<body class="antialiased">
-<!-- TopNavBar -->
-<nav class="max-w-7xl mx-auto rounded-2xl mt-4 sticky top-4 bg-neutral-900/70 dark:bg-[#131313]/70 backdrop-blur-xl z-50 shadow-[0_20px_40px_rgba(0,0,0,0.4)] flex justify-between items-center w-full px-8 py-4">
-<div class="text-2xl font-black tracking-tighter text-[#e5e2e1] uppercase font-['Space_Grotesk']">Sergflips</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="font-['Space_Grotesk'] font-bold tracking-tight text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 transition-transform duration-300" href="#">Home</a>
-<a class="font-['Space_Grotesk'] font-bold tracking-tight text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 transition-transform duration-300" href="#">Fleet</a>
-<a class="font-['Space_Grotesk'] font-bold tracking-tight text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 transition-transform duration-300" href="#">Booking</a>
-<a class="font-['Space_Grotesk'] font-bold tracking-tight text-[#e5e2e1] hover:text-[#adc7ff] transition-colors hover:scale-105 transition-transform duration-300" href="#">About</a>
-<a class="font-['Space_Grotesk'] font-bold tracking-tight text-[#adc7ff] border-b-2 border-[#adc7ff] pb-1 hover:scale-105 transition-transform duration-300" href="#">Contact</a>
-</div>
-<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-xl font-bold font-['Space_Grotesk'] hover:scale-105 transition-transform duration-300 active:scale-95 transition-all">
-            Book Now
-        </button>
+<body class="bg-background text-on-surface font-body">
+
+<!-- Nav -->
+<nav class="z-50 sticky top-4 max-w-7xl mx-auto rounded-2xl mt-4 bg-neutral-900/70 backdrop-blur-xl flex justify-between items-center w-full px-8 py-4 shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+  <div class="text-2xl font-black tracking-tighter text-[#e5e2e1] uppercase font-headline">Sergflips</div>
+  <div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+    <a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors" href="index.html">Home</a>
+    <a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors" href="fleet.html">Fleet</a>
+    <a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors" href="booking.html">Booking</a>
+    <a class="text-[#e5e2e1] hover:text-[#adc7ff] transition-colors" href="about.html">About</a>
+    <a class="text-[#adc7ff] border-b-2 border-[#adc7ff] pb-1" href="contact.html">Contact</a>
+  </div>
+  <div class="flex items-center gap-3">
+    <a href="booking.html" class="bg-gradient-to-br from-primary-container to-primary text-on-primary-container px-6 py-2 rounded-xl font-headline font-bold hover:scale-105 active:scale-95 transition-all duration-300">Book Now</a>
+    <button id="menu-toggle" class="md:hidden text-[#e5e2e1]"><span class="material-symbols-outlined">menu</span></button>
+  </div>
 </nav>
-<main class="max-w-7xl mx-auto px-8 py-20">
-<!-- Hero Section -->
-<header class="mb-20 max-w-3xl">
-<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter text-on-surface mb-6 leading-[0.9]">
-                GET IN <span class="text-primary-container">TOUCH.</span>
-</h1>
-<p class="text-xl text-on-surface-variant font-body leading-relaxed max-w-2xl">
-                Experience unparalleled automotive excellence. Our concierge team is ready to facilitate your journey with the world's finest machinery.
-            </p>
-</header>
-<!-- Main Grid -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-<!-- Contact Form Section -->
-<div class="lg:col-span-7 bg-surface-container-low p-8 md:p-12 rounded-xl border border-outline-variant/10">
-<form class="space-y-8">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="space-y-2">
-<label class="block text-xs font-bold tracking-widest text-primary-container uppercase">Full Name</label>
-<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container transition-all placeholder:text-outline/40" placeholder="John Wick" type="text"/>
+<div id="mobile-menu" class="hidden flex-col gap-4 px-8 py-6 bg-neutral-900/95 max-w-7xl mx-auto rounded-2xl mt-2">
+  <a class="text-[#e5e2e1] font-bold font-headline" href="index.html">Home</a>
+  <a class="text-[#e5e2e1] font-bold font-headline" href="fleet.html">Fleet</a>
+  <a class="text-[#e5e2e1] font-bold font-headline" href="booking.html">Booking</a>
+  <a class="text-[#e5e2e1] font-bold font-headline" href="about.html">About</a>
+  <a class="text-[#adc7ff] font-bold font-headline" href="contact.html">Contact</a>
 </div>
-<div class="space-y-2">
-<label class="block text-xs font-bold tracking-widest text-primary-container uppercase">Email Address</label>
-<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container transition-all placeholder:text-outline/40" placeholder="john@continental.com" type="email"/>
-</div>
-</div>
-<div class="space-y-2">
-<label class="block text-xs font-bold tracking-widest text-primary-container uppercase">Phone Number</label>
-<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container transition-all placeholder:text-outline/40" placeholder="+1 (555) 000-0000" type="tel"/>
-</div>
-<div class="space-y-2">
-<label class="block text-xs font-bold tracking-widest text-primary-container uppercase">Your Message</label>
-<textarea class="w-full bg-surface-container-high border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container transition-all placeholder:text-outline/40 resize-none" placeholder="Tell us about your requirements..." rows="5"></textarea>
-</div>
-<button class="group flex items-center justify-center gap-3 w-full bg-primary-container text-on-primary-container font-headline font-bold text-lg py-5 rounded-xl hover:scale-[1.02] active:scale-95 transition-all" type="submit">
-                        SEND MESSAGE
-                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</button>
-</form>
-</div>
-<!-- Side Information Column -->
-<div class="lg:col-span-5 flex flex-col gap-8">
-<!-- Business Hours Card -->
-<div class="bg-surface-container-high p-8 rounded-xl relative overflow-hidden group">
-<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/5 rounded-full -mr-16 -mt-16 transition-transform duration-700 group-hover:scale-150"></div>
-<h3 class="text-2xl font-headline font-bold mb-6 flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary">schedule</span>
-                        OPERATING HOURS
-                    </h3>
-<div class="space-y-4 font-body">
-<div class="flex justify-between items-center pb-3 border-b border-outline-variant/10">
-<span class="text-on-surface-variant">Monday — Friday</span>
-<span class="font-mono text-primary-container">08:00 AM — 10:00 PM</span>
-</div>
-<div class="flex justify-between items-center pb-3 border-b border-outline-variant/10">
-<span class="text-on-surface-variant">Saturday</span>
-<span class="font-mono text-primary-container">09:00 AM — 08:00 PM</span>
-</div>
-<div class="flex justify-between items-center">
-<span class="text-on-surface-variant">Sunday</span>
-<span class="font-mono text-secondary">Concierge Only</span>
-</div>
-</div>
-</div>
-<!-- Info Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/10">
-<span class="material-symbols-outlined text-primary-container text-3xl mb-4">call</span>
-<h4 class="text-xs font-bold tracking-widest text-outline uppercase mb-1">Call Us</h4>
-<p class="font-headline font-bold text-lg">+1 (800) VELOCITY</p>
-</div>
-<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/10">
-<span class="material-symbols-outlined text-primary-container text-3xl mb-4">mail</span>
-<h4 class="text-xs font-bold tracking-widest text-outline uppercase mb-1">Email</h4>
-<p class="font-headline font-bold text-lg">drive@company.com</p>
-</div>
-</div>
-<!-- Location Map Placeholder -->
-<div class="flex-grow min-h-[300px] bg-surface-container-low rounded-xl overflow-hidden relative border border-outline-variant/10">
-<div class="absolute inset-0 grayscale contrast-[1.2] opacity-40 mix-blend-luminosity">
-<img class="w-full h-full object-cover" data-alt="dark minimalist top-down view of a modern city grid with glowing street lights and deep shadows" data-location="Los Angeles" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBaKP060p_qyc2k36gHDNDESb9Z9gg0Csp3Ex1MJzH8t1EEdyYxpwcVLgDknGD0fQXUKpqGgF6GM4_M0T5UlbQPziz4rNTr00dqZNwI9j_UGzpN533fZFEZG7QaP03dDX6obWfUk4wxRmHQpnYukNo-q7eysD4qqNawmQS1bnDP41HHrLturtjRpWzN9IlsaF-NO8AhFWIwEQZdhJXc0xeXJhAMQihe4FjAJynCLC2H0jWD96XPXMhKM4JOhXZDFmxYgE_Nq6FvFY5"/>
-</div>
-<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
-<div class="absolute bottom-6 left-6 right-6 p-4 glass-panel rounded-lg flex items-center gap-4">
-<div class="w-12 h-12 bg-primary-container rounded-lg flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-on-primary-container">location_on</span>
-</div>
-<div>
-<p class="text-xs font-bold tracking-widest text-primary-container uppercase">Headquarters</p>
-<p class="font-body text-sm font-medium">90210 Luxury Way, Beverly Hills, CA</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Asymmetric Image Section -->
-<section class="mt-32 relative h-[500px] rounded-3xl overflow-hidden">
-<img class="w-full h-full object-cover object-center" data-alt="cinematic close up of a sleek dark sports car steering wheel and carbon fiber dashboard under moody blue studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDURHuDJRa-9S3Uqy_CIwtjU7Z6C-8BUrqLVQfO9kPx5iFKFdLq_83YJIU3vTihZ79KuCSRPmGmk26pehGlWcKdYa2Jy_IywRez_JU5e5mv3dSla2DWa4lca1Ao0P7bTkw3Rlhg1SrgVT0FNFDi1x2qltlj4ybtcihEizH5BH7xz23X1GsOPP-nUpLHC1HZSeB6-sGY_4oFZT0Jmszta4PK02I-jhMgaXIWdLIb3rYu1WDH2eWbFOtFBPkafNUQuFGhPe9iwdbZSmy4"/>
-<div class="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent"></div>
-<div class="absolute inset-0 flex items-center px-12 md:px-20">
-<div class="max-w-xl">
-<h2 class="text-4xl md:text-5xl font-headline font-black mb-6 tracking-tighter uppercase italic">The Garage <br/>Is Waiting.</h2>
-<p class="text-lg text-on-surface-variant font-body mb-8">Ready to select your drive? Browse our curated fleet of high-performance vehicles.</p>
-<a class="inline-flex items-center gap-4 text-primary-container font-headline font-bold text-lg hover:gap-6 transition-all" href="#">
-                        EXPLORE FLEET <span class="material-symbols-outlined">trending_flat</span>
-</a>
-</div>
-</div>
-</section>
+
+<main class="pt-16 pb-24 px-8 max-w-7xl mx-auto">
+  <header class="pt-8 mb-16">
+    <span class="text-secondary font-headline font-bold tracking-widest uppercase text-sm mb-4 block">Get in Touch</span>
+    <h1 class="font-headline font-bold text-5xl md:text-7xl tracking-tighter mb-4">Contact <span class="text-primary-container">Us</span></h1>
+    <p class="text-on-surface-variant text-lg max-w-xl">Have a question or ready to book? Our team is here to help every step of the way.</p>
+  </header>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+    <!-- Form -->
+    <div class="lg:col-span-7 bg-surface-container-high rounded-xl p-8 md:p-12">
+      <h2 class="text-2xl font-headline font-bold mb-8">Send a Message</h2>
+      <form class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label class="text-xs uppercase tracking-widest text-on-surface-variant font-bold block mb-2">Full Name</label>
+            <input type="text" placeholder="John Doe" class="w-full bg-surface-container-low border border-outline-variant/20 text-on-surface px-4 py-3 rounded-lg focus:ring-1 focus:ring-primary-container outline-none placeholder:text-on-surface-variant/40"/>
+          </div>
+          <div>
+            <label class="text-xs uppercase tracking-widest text-on-surface-variant font-bold block mb-2">Email</label>
+            <input type="email" placeholder="john@example.com" class="w-full bg-surface-container-low border border-outline-variant/20 text-on-surface px-4 py-3 rounded-lg focus:ring-1 focus:ring-primary-container outline-none placeholder:text-on-surface-variant/40"/>
+          </div>
+        </div>
+        <div>
+          <label class="text-xs uppercase tracking-widest text-on-surface-variant font-bold block mb-2">Phone</label>
+          <input type="tel" placeholder="+1 (555) 000-0000" class="w-full bg-surface-container-low border border-outline-variant/20 text-on-surface px-4 py-3 rounded-lg focus:ring-1 focus:ring-primary-container outline-none placeholder:text-on-surface-variant/40"/>
+        </div>
+        <div>
+          <label class="text-xs uppercase tracking-widest text-on-surface-variant font-bold block mb-2">Subject</label>
+          <select class="w-full bg-surface-container-low border border-outline-variant/20 text-on-surface px-4 py-3 rounded-lg focus:ring-1 focus:ring-primary-container outline-none">
+            <option>General Inquiry</option>
+            <option>Booking Question</option>
+            <option>Fleet Information</option>
+            <option>Pricing & Rates</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label class="text-xs uppercase tracking-widest text-on-surface-variant font-bold block mb-2">Message</label>
+          <textarea rows="5" placeholder="Tell us how we can help..." class="w-full bg-surface-container-low border border-outline-variant/20 text-on-surface px-4 py-3 rounded-lg focus:ring-1 focus:ring-primary-container outline-none placeholder:text-on-surface-variant/40 resize-none"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-black py-5 rounded-xl text-lg hover:scale-105 active:scale-95 transition-all shadow-lg">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="lg:col-span-5 flex flex-col gap-6">
+      <div class="bg-surface-container-high p-8 rounded-xl border-l-4 border-secondary">
+        <h3 class="text-xl font-headline font-bold mb-6">Business Details</h3>
+        <div class="space-y-6">
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">phone_iphone</span>
+            <div>
+              <p class="text-xs text-on-surface-variant uppercase tracking-widest mb-1">Call / Text</p>
+              <p class="font-headline font-bold">+1 (555) 737-4354</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">mail</span>
+            <div>
+              <p class="text-xs text-on-surface-variant uppercase tracking-widest mb-1">Email</p>
+              <p class="font-headline font-bold">inquiry@sergflips.com</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">schedule</span>
+            <div>
+              <p class="text-xs text-on-surface-variant uppercase tracking-widest mb-1">Hours</p>
+              <p class="font-headline font-bold">Mon–Sat: 9AM – 8PM</p>
+              <p class="text-sm text-on-surface-variant">Sunday: By Appointment</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-secondary" style="font-variation-settings:'FILL' 1;">location_on</span>
+            <div>
+              <p class="text-xs text-on-surface-variant uppercase tracking-widest mb-1">Location</p>
+              <p class="font-headline font-bold">Indianapolis, IN</p>
+              <p class="text-sm text-on-surface-variant">Delivery available nationwide</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Book CTA -->
+      <div class="bg-gradient-to-br from-surface-container-high to-surface-container-low p-8 rounded-xl border border-primary-container/20">
+        <span class="material-symbols-outlined text-primary-container text-4xl mb-4 block" style="font-variation-settings:'FILL' 1;">bolt</span>
+        <h3 class="text-xl font-headline font-bold mb-2">Ready to Book?</h3>
+        <p class="text-on-surface-variant text-sm mb-6">Skip the wait — go straight to our booking page and reserve your vehicle in minutes.</p>
+        <a href="booking.html" class="inline-flex items-center gap-2 bg-gradient-to-br from-primary-container to-primary text-on-primary-container font-headline font-bold px-6 py-3 rounded-xl hover:scale-105 transition-transform">
+          Book Now <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </div>
 </main>
-<!-- Footer -->
-<footer class="bg-[#1c1b1b] dark:bg-[#1c1b1b] w-full pt-16 pb-8">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 px-8">
-<div class="space-y-6">
-<div class="text-xl font-bold text-[#e5e2e1] font-headline uppercase">Sergflips</div>
-<p class="text-[#e5e2e1]/60 text-sm leading-relaxed">Defining the next generation of luxury mobility through technical precision and white-glove service.</p>
-</div>
-<div>
-<h4 class="font-headline font-bold mb-6 text-primary-container">Quick Links</h4>
-<ul class="space-y-3 font-['Inter'] text-sm text-[#e5e2e1]">
-<li><a class="text-[#e5e2e1]/60 hover:text-[#adc7ff] transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="text-[#e5e2e1]/60 hover:text-[#adc7ff] transition-colors" href="#">Terms of Service</a></li>
-<li><a class="text-[#e5e2e1]/60 hover:text-[#adc7ff] transition-colors" href="#">FAQ</a></li>
-<li><a class="text-[#e5e2e1]/60 hover:text-[#adc7ff] transition-colors" href="#">Fleet Guide</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-headline font-bold mb-6 text-primary-container">Connect</h4>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all" href="#">
-<span class="material-symbols-outlined text-lg" data-icon="public">public</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all" href="#">
-<span class="material-symbols-outlined text-lg" data-icon="share">share</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center hover:bg-primary-container hover:text-on-primary-container transition-all" href="#">
-<span class="material-symbols-outlined text-lg" data-icon="distance">distance</span>
-</a>
-</div>
-</div>
-<div class="space-y-4">
-<h4 class="font-headline font-bold mb-6 text-primary-container">Newsletter</h4>
-<div class="flex">
-<input class="bg-surface-container-high border-none rounded-l-lg p-3 text-sm focus:ring-0 w-full" placeholder="Email" type="email"/>
-<button class="bg-primary-container text-on-primary-container px-4 rounded-r-lg font-bold">
-<span class="material-symbols-outlined">send</span>
-</button>
-</div>
-</div>
-</div>
-<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/10 text-center">
-<p class="font-['Inter'] text-sm text-[#e5e2e1]/60">© 2024 Sergflips. High-Performance Excellence.</p>
-</div>
+
+<footer class="bg-[#1c1b1b] w-full pt-16 pb-8 border-t border-outline-variant/10">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 px-8">
+    <div><div class="text-xl font-bold text-[#e5e2e1] font-headline uppercase mb-6">Sergflips</div><p class="text-sm text-[#e5e2e1]/60">Premium car rentals. Based in Indianapolis, IN.</p></div>
+    <div><h5 class="text-[#adc7ff] font-headline font-bold mb-6 text-xs uppercase tracking-widest">Navigation</h5><ul class="space-y-4 text-sm text-[#e5e2e1]"><li><a class="hover:text-[#adc7ff] transition-colors" href="index.html">Home</a></li><li><a class="hover:text-[#adc7ff] transition-colors" href="fleet.html">Fleet</a></li><li><a class="hover:text-[#adc7ff] transition-colors" href="booking.html">Booking</a></li><li><a class="hover:text-[#adc7ff] transition-colors" href="about.html">About</a></li><li><a class="hover:text-[#adc7ff] transition-colors" href="contact.html">Contact</a></li></ul></div>
+    <div><h5 class="text-[#adc7ff] font-headline font-bold mb-6 text-xs uppercase tracking-widest">Support</h5><ul class="space-y-4 text-sm text-[#e5e2e1]"><li><a class="hover:text-[#adc7ff]" href="#">Privacy Policy</a></li><li><a class="hover:text-[#adc7ff]" href="#">Terms</a></li><li><a class="hover:text-[#adc7ff]" href="#">FAQ</a></li></ul></div>
+    <div><h5 class="text-[#adc7ff] font-headline font-bold mb-6 text-xs uppercase tracking-widest">Contact</h5><ul class="space-y-3 text-sm text-[#e5e2e1]/60"><li>inquiry@sergflips.com</li><li>+1 (555) 737-4354</li><li>Indianapolis, IN</li></ul></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-outline-variant/10 text-center"><p class="text-sm text-[#e5e2e1]/40">© 2024 Sergflips. Premium Car Rentals.</p></div>
 </footer>
-</body></html>
+
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    var m = document.getElementById('mobile-menu');
+    m.classList.toggle('hidden'); m.classList.toggle('flex');
+  });
+</script>
+</body>
+</html>
